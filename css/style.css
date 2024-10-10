@@ -3,11 +3,11 @@
 
 :root {
   --main-color: #219EBC;
-  --secondary-color: #8ECAE6;
+  --secondary-color: #d2eaf5;
   --third-color: #EAC435;
   --dark-color: #272727;
-  --title-font: "Life Savers";
-  --text-font: "Kanit";
+  --title-font: "Life Savers", sans-serif;
+  --text-font: "Kanit", sans-serif;
 } 
 *{
     box-sizing: border-box;
@@ -16,7 +16,5 @@
     margin: 0;
     line-height: 1.5;
     background-color: white;
-  }
-  body p{
     font-family: var(--text-font);
   }
