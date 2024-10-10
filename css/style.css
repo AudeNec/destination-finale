@@ -45,4 +45,71 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
+  
+      box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: white;
+  }
+
+  body p{
+    font-family: var(--text-font);
+  }
+
+h1{
+    font-weight: 800;
+    font-size: 24px;
+    font-family: var(--title-font);
+}
+
+#welcome {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome p {
+    font-size: 16px;
+}
+
+.fichecity p {
+    font-size: 14px; 
+    font-weight: 300;
+}
+
+.city{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content:space-around;
+    gap: 3rem;
+    padding: 2rem;
+
+}
+
+.logocity {
+    height: 8rem;
+}
+
+.fichecity p{
+    padding-bottom: 1rem;
+}
+
+.fichecity button{
+   width: 166.03px;
+   height: 47.1px;
+   background-color: var(--third-color);
+   font-family: var(--title-font);
+   font-weight: bold;
+   border-radius: 25px;
+   border: none;
+   box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+   -webkit-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+   -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
 }
