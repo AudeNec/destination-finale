@@ -1,0 +1,25 @@
+body section#map {
+    display: grid;
+    grid-template: repeat(17, 1fr) / repeat(25, 16px);
+    justify-content: center;
+}
+
+body section#map img {
+    grid-area: 1 / 1 / 26 / 26;
+}
+
+body section#map #button-edimbourg {
+    grid-area: 9 / 8;
+}
+
+body section#map #button-bruxelles {
+    grid-area: 11 / 11;
+}
+
+body section#map #button-budapest {
+    grid-area: 13 / 18;
+}
+
+body section#map #button-valence {
+    grid-area: 15 / 9;
+}
