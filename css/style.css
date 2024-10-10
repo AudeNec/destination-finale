@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    /* background-color: ; */
+    display:flex;
+    align-items: center;
+    gap: 50%;
+  
+}
+
+.logo {
+width: 15em;
+height: auto;
+}
+
+nav ul {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 50%;
+}
+
+nav ul li {
+    min-width: fit-content;
+}
+
+.burger {
+    display: none;
+}
+
