@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Life+Savers:wght@400;700;800&display=swap');
+
+:root {
+  --main-color: #219EBC;
+  --secondary-color: #d2eaf5;
+  --third-color: #EAC435;
+  --dark-color: #272727;
+  --title-font: "Life Savers", sans-serif;
+  --text-font: "Kanit", sans-serif;
+} 
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: var(--text-font);
+}
+
 body section#map {
-    display: grid;
-    grid-template: repeat(17, 1fr) / repeat(25, 16px);
-    justify-content: center;
+  display: grid;
+  grid-template: repeat(17, 1fr) / repeat(25, 16px);
+  justify-content: center;
 }
 
 body section#map img {
