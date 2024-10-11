@@ -175,3 +175,31 @@ body section#buttons-category {
 body section#buttons-category a img {
     width: 15vw;
 }
+
+body section.category {
+    padding : 1rem 2rem;
+}
+
+body section#top-3, body section#manger {
+    background-color: var(--secondary-color);
+}
+
+body section.category header {
+    display : flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+body section.category img {
+    width: 10%;
+}
+
+body section.category h2 {
+    font-size: 20px;
+}
+
+body section.category ul{
+    list-style: disc;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
