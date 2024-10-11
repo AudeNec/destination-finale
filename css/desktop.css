@@ -12,3 +12,75 @@ main {
 #welcome {
     width: 50%;
 }
+nav, footer {
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+/* Style de la nav */
+
+ nav {
+    display:flex;
+    align-items: center;
+    gap: 45%;
+    padding: .5em .5em 0.5em ;
+}
+
+nav #logo {
+width: 15em;
+height: auto;
+}
+
+nav #menu {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 35%;
+}
+
+nav ul li {
+    min-width: fit-content;
+}
+
+#burger {
+    display: none;
+}
+
+/* Style du header */
+
+header#main-header {
+    font-size: 3em;
+    font-weight: 600;
+    padding: .5em 0 1em 0;
+}
+
+/* Style du footer */
+
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+
+footer span {
+    width: 48%;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    padding: 1em 2em 1em 2em;
+    width: 48%;
+
+}
+
+footer ul li {
+    min-width: fit-content;
+}
+
