@@ -20,11 +20,11 @@ body {
     line-height: 1.5;
     background-color: var(--white-color);
     font-family: var(--text-font);
-  }
+}
 
 /* Style de la nav */
 
-  nav, footer {
+nav, footer {
     background-color: var(--main-color);
     font-family: var(--text-font);
     color: var(--white-color);
@@ -34,22 +34,22 @@ body {
 
 nav {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 40%;
+    width: 100%;
     padding: .5em;
 }
 
-nav #logo {
+nav img#logo {
     width: 45%;
     height: auto;
 }
 
-nav #menu {
+nav ul#menu {
     display: none;
 }
 
-nav #burger {
+nav img#burger {
     width: 10%;
     height: auto;
 }
@@ -68,75 +68,41 @@ header#main-header {
 
 /* Style de la map */
 
-body section#map {
+main section#map {
     display: grid;
     grid-template: repeat(17, 1fr) / repeat(25, 16px);
     justify-content: center;
 }
 
-body section#map img {
+main section#map img {
     grid-area: 1 / 1 / 26 / 26;
 }
 
-body section#map #button-edimbourg {
+main section#map #button-edimbourg {
     grid-area: 9 / 8;
 }
 
-body section#map #button-bruxelles {
+main section#map #button-bruxelles {
     grid-area: 11 / 11;
 }
 
-body section#map #button-budapest {
+main section#map #button-budapest {
     grid-area: 13 / 18;
 }
 
-body section#map #button-valence {
+main section#map #button-valence {
     grid-area: 15 / 9;
 }
 
-body section#map {
-  display: grid;
-  grid-template: repeat(17, 1fr) / repeat(25, 16px);
-  justify-content: center;
-}
+/* Style fiche Welcome */
 
-body section#map img {
-    grid-area: 1 / 1 / 26 / 26;
-}
-
-body section#map #button-edimbourg {
-    grid-area: 9 / 8;
-}
-
-body section#map #button-bruxelles {
-    grid-area: 11 / 11;
-}
-
-body section#map #button-budapest {
-    grid-area: 13 / 18;
-}
-
-body section#map #button-valence {
-    grid-area: 15 / 9;
-}
-
-body {
-    margin: 0;
-    line-height: 1.5;
-    background-color: white;
-  }
-
-body p{
-    font-family: var(--text-font);
-  }
-
-h1{
+main section#welcome h1{
     font-weight: 800;
     font-size: 1.5em;
     font-family: var(--title-font);
 }
 
-#welcome {
+main section#welcome {
     display: flex;
     background-color: var(--secondary-color);
     height: auto;
@@ -147,19 +113,13 @@ h1{
     padding-top: 1rem;
 }
 
-
-#welcome p {
+main section#welcome p {
     font-size: 1em;
 }
 
 /* Style carte ville */
 
-.fichecity p {
-    font-size: .8em; 
-    font-weight: 300;
-}
-
-.city{
+main section.city{
     display: flex;
     background-color: var(--secondary-color);
     justify-content:space-around;
@@ -167,15 +127,17 @@ h1{
     padding: 2rem;
 }
 
-.logocity {
-    height: 8rem;
-}
-
-.fichecity p{
+main section.city div.fichecity p {
+    font-size: .8em; 
+    font-weight: 300;
     padding-bottom: 1rem;
 }
 
-.fichecity button{
+main section.city img.logocity {
+    height: 8rem;
+}
+
+main section.city div.fichecity button{
    width: 166.03px;
    height: 47.1px;
    background-color: var(--third-color);
@@ -188,35 +150,12 @@ h1{
    -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
 }
 
-.fichecity button:hover{
+main section.city div.fichecity button:hover{
     border: 3px solid var(--third-color);
     background-color: #fff;
     cursor: pointer;
     transition: background-color 0.4s ease, color 0.4s ease;
 }
-
-/* Style footer */
-
-footer{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer ul {
-    display: flex;
-    align-items: center; 
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 1em;
-}
-footer span {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding: .5em 0 .5em 1em;
-} 
 
 /* Page Fiche destination - Dimensionnement photo ville*/
 
@@ -268,3 +207,25 @@ main section.category ul{
     padding-top: 1rem;
 }
 
+/* Style footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em;
+}
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: .5em 0 .5em 1em;
+} 

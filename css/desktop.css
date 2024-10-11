@@ -1,3 +1,5 @@
+/* Style de la nav */
+
 nav, footer {
     background-color: var(--main-color);
     font-family: var(--text-font);
@@ -6,32 +8,28 @@ nav, footer {
     font-size: 1.2em;
 }
 
-/* Style de la nav */
-
- nav {
-    display:flex;
-    align-items: center;
-    gap: 45%;
+nav {
     padding: .5em .5em 0.5em ;
+    gap: 0%;
 }
 
-nav #logo {
+nav img#logo {
 width: 15em;
 height: auto;
 }
 
-nav #menu {
+nav ul#menu {
     display: flex;
     justify-content:space-around;
     align-items: center;
-    gap: 35%;
+    gap: 20%;
 }
 
 nav ul li {
     min-width: fit-content;
 }
 
-#burger {
+nav img#burger {
     display: none;
 }
 
@@ -44,7 +42,6 @@ header#main-header {
 }
 
 /* Style du footer */
-
 
 footer {
     display: flex;
