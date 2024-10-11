@@ -1,0 +1,31 @@
+/* Page Fiche destination - Style des boutons d'ancrage */
+
+main section#buttons-category {
+    display: none;
+}
+
+main section.category {
+    padding : 0rem 0rem;
+}
+
+main section#top-3, body section#manger {
+    background-color: var(--white-color);
+}
+main section.category header {
+    padding : 1rem 2rem;
+    justify-content: center;
+}
+main section.category #arrow {
+    display: inline-block;
+    width: 2%;
+}
+main section.category img {
+    width: 5%;
+}
+main section.category ul{
+    background-color: var(--secondary-color);
+    padding-bottom: 1rem;
+    padding-left: 6rem;
+    width: 100%;
+    font-size: 1.2rem;
+}
