@@ -94,7 +94,48 @@ body section#map #button-valence {
     grid-area: 15 / 9;
 }
 
-/* Style carte Welcome */
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: var(--text-font);
+}
+
+body section#map {
+  display: grid;
+  grid-template: repeat(17, 1fr) / repeat(25, 16px);
+  justify-content: center;
+}
+
+body section#map img {
+    grid-area: 1 / 1 / 26 / 26;
+}
+
+body section#map #button-edimbourg {
+    grid-area: 9 / 8;
+}
+
+body section#map #button-bruxelles {
+    grid-area: 11 / 11;
+}
+
+body section#map #button-budapest {
+    grid-area: 13 / 18;
+}
+
+body section#map #button-valence {
+    grid-area: 15 / 9;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: white;
+  }
+
+body p{
+    font-family: var(--text-font);
+  }
 
 h1{
     font-weight: 800;
@@ -110,7 +151,9 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 1rem;
 }
+
 
 #welcome p {
     font-size: 1em;
@@ -188,4 +231,10 @@ body section#buttons-category {
 
 body section#buttons-category a img {
     width: 15vw;
+}
+
+/* dimensionnement photo ville*/
+
+.photodestination {
+    width: 100%;
 }
