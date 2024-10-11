@@ -18,12 +18,39 @@ body {
     margin: 0;
     line-height: 1.5;
     background-color: white;
-}
-
-body p{
     font-family: var(--text-font);
+  }
+
+
+  nav, footer {
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    font-size: 24px;
 }
 
+/* Style de la nav */
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40%;
+    padding: .5em;
+}
+
+#logo {
+    width: 45%;
+    height: auto;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    width: 10%;
+    height: auto;
+}
 
 /* Style de la map */
 
@@ -53,6 +80,7 @@ body section#map #button-valence {
     grid-area: 15 / 9;
 }
 
+<<<<<<< HEAD
 body {
   margin: 0;
   line-height: 1.5;
@@ -95,6 +123,9 @@ body {
 body p{
     font-family: var(--text-font);
   }
+=======
+/* Style carte Welcome */
+>>>>>>> cb862c4f1eb804ae0c35c56ca048a2207be14a0d
 
 h1{
     font-weight: 800;
@@ -115,6 +146,8 @@ h1{
 #welcome p {
     font-size: 16px;
 }
+
+/* Style carte ville */
 
 .fichecity p {
     font-size: 14px; 
@@ -150,34 +183,7 @@ h1{
    -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
 }
 
-nav, footer {
-    background-color: var(--main-color);
-    font-family: var(--text-font);
-    font-size: 24px;
-}
-
-
-nav {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40%;
-    padding: .5em;
-}
-
-#logo {
-    width: 45%;
-    height: auto;
-}
-
-#menu {
-    display: none;
-}
-
-#burger {
-    width: 10%;
-    height: auto;
-}
+/* Style footer */
 
 footer{
     display: flex;
@@ -201,7 +207,7 @@ footer span {
 } 
 
 
-/* Style des boutons d'ancrage page destination */
+/* Page Fiche destination - Style des boutons d'ancrage */
 
 body section#buttons-category {
     display: flex;
@@ -213,6 +219,7 @@ body section#buttons-category {
 
 body section#buttons-category a img {
     width: 15vw;
+<<<<<<< HEAD
 }
 
 /* dimensionnement photo ville*/
@@ -220,3 +227,6 @@ body section#buttons-category a img {
 .photodestination {
     width: 100%;
 }
+=======
+}
+>>>>>>> cb862c4f1eb804ae0c35c56ca048a2207be14a0d
