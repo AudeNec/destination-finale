@@ -8,6 +8,7 @@
   --dark-color: #272727;
   --title-font: "Life Savers", sans-serif;
   --text-font: "Kanit", sans-serif;
+  --white-color: white;
 } 
 
 *{
@@ -17,7 +18,7 @@
 body {
     margin: 0;
     line-height: 1.5;
-    background-color: white;
+    background-color: var(--white-color);
     font-family: var(--text-font);
   }
 
@@ -25,7 +26,9 @@ body {
   nav, footer {
     background-color: var(--main-color);
     font-family: var(--text-font);
-    font-size: 24px;
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: .7em;
 }
 
 /* Style de la nav */
@@ -52,6 +55,17 @@ nav {
     height: auto;
 }
 
+/* Style du footer */
+
+header {
+    background-color: var(--main-color);
+    font-family: var(--title-font); 
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+    padding: 0 .1em 1rem .1em;
+}
 /* Style de la map */
 
 body section#map {
@@ -80,11 +94,52 @@ body section#map #button-valence {
     grid-area: 15 / 9;
 }
 
-/* Style carte Welcome */
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: var(--text-font);
+}
+
+body section#map {
+  display: grid;
+  grid-template: repeat(17, 1fr) / repeat(25, 16px);
+  justify-content: center;
+}
+
+body section#map img {
+    grid-area: 1 / 1 / 26 / 26;
+}
+
+body section#map #button-edimbourg {
+    grid-area: 9 / 8;
+}
+
+body section#map #button-bruxelles {
+    grid-area: 11 / 11;
+}
+
+body section#map #button-budapest {
+    grid-area: 13 / 18;
+}
+
+body section#map #button-valence {
+    grid-area: 15 / 9;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: white;
+  }
+
+body p{
+    font-family: var(--text-font);
+  }
 
 h1{
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: var(--title-font);
 }
 
@@ -96,16 +151,18 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 1rem;
 }
 
+
 #welcome p {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 /* Style carte ville */
 
 .fichecity p {
-    font-size: 14px; 
+    font-size: .8em; 
     font-weight: 300;
 }
 
@@ -161,6 +218,11 @@ footer span {
     padding: .5em 0 .5em 1em;
 } 
 
+/* Page Fiche destination - Dimensionnement photo ville*/
+
+.photodestination {
+    width: 100%;
+}
 
 /* Page Fiche destination - Style des boutons d'ancrage */
 
@@ -175,6 +237,8 @@ body section#buttons-category {
 body section#buttons-category a img {
     width: 15vw;
 }
+
+/* Page Fiche destination - Style categories de la fiche */
 
 body section.category {
     padding : 1rem 2rem;
@@ -203,3 +267,4 @@ body section.category ul{
     padding-left: 2.5rem;
     padding-top: 1rem;
 }
+
