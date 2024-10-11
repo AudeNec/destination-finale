@@ -84,6 +84,7 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
+}
 
 body {
     margin: 0;
@@ -212,4 +213,10 @@ body section#buttons-category {
 
 body section#buttons-category a img {
     width: 15vw;
+}
+
+/* dimensionnement photo ville*/
+
+.photodestination {
+    width: 100%;
 }
