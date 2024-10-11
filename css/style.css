@@ -80,7 +80,6 @@ body section#map #button-valence {
     grid-area: 15 / 9;
 }
 
-<<<<<<< HEAD
 body {
   margin: 0;
   line-height: 1.5;
@@ -123,9 +122,6 @@ body {
 body p{
     font-family: var(--text-font);
   }
-=======
-/* Style carte Welcome */
->>>>>>> cb862c4f1eb804ae0c35c56ca048a2207be14a0d
 
 h1{
     font-weight: 800;
@@ -141,7 +137,9 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 1rem;
 }
+
 
 #welcome p {
     font-size: 16px;
@@ -219,7 +217,6 @@ body section#buttons-category {
 
 body section#buttons-category a img {
     width: 15vw;
-<<<<<<< HEAD
 }
 
 /* dimensionnement photo ville*/
@@ -227,6 +224,3 @@ body section#buttons-category a img {
 .photodestination {
     width: 100%;
 }
-=======
-}
->>>>>>> cb862c4f1eb804ae0c35c56ca048a2207be14a0d
