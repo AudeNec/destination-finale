@@ -1,0 +1,14 @@
+main {
+    display: flex;
+}
+.city {
+    display:none;
+}
+
+#map {
+    width: 50%;
+}
+
+#welcome {
+    width: 50%;
+}
