@@ -3,7 +3,7 @@
 
 :root {
   --main-color: #219EBC;
-  --secondary-color: #8ECAE6;
+  --secondary-color: #d2eaf5;
   --third-color: #EAC435;
   --dark-color: #272727;
   --title-font: "Life Savers";
@@ -12,7 +12,7 @@
 
 *{
     box-sizing: border-box;
-  }
+}
 
 body {
     margin: 0;
@@ -23,6 +23,9 @@ body {
 body p{
     font-family: var(--text-font);
 }
+
+
+/* Style de la map */
 
 body section#map {
     display: grid;
@@ -48,4 +51,18 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
+}
+
+/* Style des boutons d'ancrage page destination */
+
+body section#buttons-category {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+body section#buttons-category a img {
+    width: 15vw;
 }
