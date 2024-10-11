@@ -1,3 +1,17 @@
+main {
+    display: flex;
+}
+.city {
+    display:none;
+}
+
+#map {
+    width: 50%;
+}
+
+#welcome {
+    width: 50%;
+}
 nav, footer {
     background-color: var(--main-color);
     font-family: var(--text-font);
