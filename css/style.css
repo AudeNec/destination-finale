@@ -6,8 +6,8 @@
   --secondary-color: #d2eaf5;
   --third-color: #EAC435;
   --dark-color: #272727;
-  --title-font: "Life Savers";
-  --text-font: "Kanit";
+  --title-font: "Life Savers", sans-serif;
+  --text-font: "Kanit", sans-serif;
 } 
 
 *{
@@ -52,6 +52,153 @@ body section#map #button-budapest {
 body section#map #button-valence {
     grid-area: 15 / 9;
 }
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+  font-family: var(--text-font);
+}
+
+body section#map {
+  display: grid;
+  grid-template: repeat(17, 1fr) / repeat(25, 16px);
+  justify-content: center;
+}
+
+body section#map img {
+    grid-area: 1 / 1 / 26 / 26;
+}
+
+body section#map #button-edimbourg {
+    grid-area: 9 / 8;
+}
+
+body section#map #button-bruxelles {
+    grid-area: 11 / 11;
+}
+
+body section#map #button-budapest {
+    grid-area: 13 / 18;
+}
+
+body section#map #button-valence {
+    grid-area: 15 / 9;
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: white;
+  }
+
+body p{
+    font-family: var(--text-font);
+  }
+
+h1{
+    font-weight: 800;
+    font-size: 24px;
+    font-family: var(--title-font);
+}
+
+#welcome {
+    display: flex;
+    background-color: var(--secondary-color);
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome p {
+    font-size: 16px;
+}
+
+.fichecity p {
+    font-size: 14px; 
+    font-weight: 300;
+}
+
+.city{
+    display: flex;
+    background-color: var(--secondary-color);
+    justify-content:space-around;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+.logocity {
+    height: 8rem;
+}
+
+.fichecity p{
+    padding-bottom: 1rem;
+}
+
+.fichecity button{
+   width: 166.03px;
+   height: 47.1px;
+   background-color: var(--third-color);
+   font-family: var(--title-font);
+   font-weight: bold;
+   border-radius: 25px;
+   border: none;
+   box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+   -webkit-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+   -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+}
+
+nav, footer {
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    font-size: 24px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40%;
+    padding: .5em;
+}
+
+#logo {
+    width: 45%;
+    height: auto;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    width: 10%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em;
+}
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: .5em 0 .5em 1em;
+} 
+
 
 /* Style des boutons d'ancrage page destination */
 
