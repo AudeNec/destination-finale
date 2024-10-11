@@ -22,6 +22,7 @@ body {
     font-family: var(--text-font);
   }
 
+/* Style de la nav */
 
   nav, footer {
     background-color: var(--main-color);
@@ -31,8 +32,6 @@ body {
     font-size: .7em;
 }
 
-/* Style de la nav */
-
 nav {
     display: flex;
     align-items: center;
@@ -41,31 +40,32 @@ nav {
     padding: .5em;
 }
 
-#logo {
+nav #logo {
     width: 45%;
     height: auto;
 }
 
-#menu {
+nav #menu {
     display: none;
 }
 
-#burger {
+nav #burger {
     width: 10%;
     height: auto;
 }
 
-/* Style du footer */
+/* Style du header */
 
-header {
+header#main-header {
     background-color: var(--main-color);
     font-family: var(--title-font); 
     font-size: 1.7em;
     font-weight: 500;
     color: var(--white-color);
     text-align: center;
-    padding: 0 .1em 1rem .1em;
+    padding: 1rem;
 }
+
 /* Style de la map */
 
 body section#map {
@@ -92,13 +92,6 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
-}
-
-body {
-  margin: 0;
-  line-height: 1.5;
-  background-color: white;
-  font-family: var(--text-font);
 }
 
 body section#map {
@@ -220,13 +213,13 @@ footer span {
 
 /* Page Fiche destination - Dimensionnement photo ville*/
 
-.photodestination {
+main section#photo .photodestination {
     width: 100%;
 }
 
 /* Page Fiche destination - Style des boutons d'ancrage */
 
-body section#buttons-category {
+main section#buttons-category {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -234,35 +227,35 @@ body section#buttons-category {
     width: 100%;
 }
 
-body section#buttons-category a img {
+main section#buttons-category a img {
     width: 15vw;
 }
 
 /* Page Fiche destination - Style categories de la fiche */
 
-body section.category {
+main section.category {
     padding : 1rem 2rem;
 }
 
-body section#top-3, body section#manger {
+main section#top-3, body section#manger {
     background-color: var(--secondary-color);
 }
 
-body section.category header {
+main section.category header {
     display : flex;
     align-items: center;
     gap: 1rem;
 }
 
-body section.category img {
+main section.category img {
     width: 10%;
 }
 
-body section.category h2 {
+main section.category h2 {
     font-size: 20px;
 }
 
-body section.category ul{
+main section.category ul{
     list-style: disc;
     padding-left: 2.5rem;
     padding-top: 1rem;
