@@ -8,6 +8,7 @@
   --dark-color: #272727;
   --title-font: "Life Savers", sans-serif;
   --text-font: "Kanit", sans-serif;
+  --white-color: white;
 } 
 
 *{
@@ -17,18 +18,19 @@
 body {
     margin: 0;
     line-height: 1.5;
-    background-color: white;
+    background-color: var(--white-color);
     font-family: var(--text-font);
   }
 
+/* Style de la nav */
 
   nav, footer {
     background-color: var(--main-color);
     font-family: var(--text-font);
-    font-size: 24px;
+    color: var(--white-color);
+    font-weight: 300;
+    font-size: .7em;
 }
-
-/* Style de la nav */
 
 nav {
     display: flex;
@@ -38,18 +40,30 @@ nav {
     padding: .5em;
 }
 
-#logo {
+nav #logo {
     width: 45%;
     height: auto;
 }
 
-#menu {
+nav #menu {
     display: none;
 }
 
-#burger {
+nav #burger {
     width: 10%;
     height: auto;
+}
+
+/* Style du header */
+
+header#main-header {
+    background-color: var(--main-color);
+    font-family: var(--title-font); 
+    font-size: 1.7em;
+    font-weight: 500;
+    color: var(--white-color);
+    text-align: center;
+    padding: 1rem;
 }
 
 /* Style de la map */
@@ -78,13 +92,6 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
-}
-
-body {
-  margin: 0;
-  line-height: 1.5;
-  background-color: white;
-  font-family: var(--text-font);
 }
 
 body section#map {
@@ -125,7 +132,7 @@ body p{
 
 h1{
     font-weight: 800;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: var(--title-font);
 }
 
@@ -142,13 +149,13 @@ h1{
 
 
 #welcome p {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 /* Style carte ville */
 
 .fichecity p {
-    font-size: 14px; 
+    font-size: .8em; 
     font-weight: 300;
 }
 
@@ -211,10 +218,15 @@ footer span {
     padding: .5em 0 .5em 1em;
 } 
 
+/* Page Fiche destination - Dimensionnement photo ville*/
+
+main section#photo .photodestination {
+    width: 100%;
+}
 
 /* Page Fiche destination - Style des boutons d'ancrage */
 
-body section#buttons-category {
+main section#buttons-category {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
@@ -222,12 +234,37 @@ body section#buttons-category {
     width: 100%;
 }
 
-body section#buttons-category a img {
+main section#buttons-category a img {
     width: 15vw;
 }
 
-/* dimensionnement photo ville*/
+/* Page Fiche destination - Style categories de la fiche */
 
-.photodestination {
-    width: 100%;
+main section.category {
+    padding : 1rem 2rem;
 }
+
+main section#top-3, body section#manger {
+    background-color: var(--secondary-color);
+}
+
+main section.category header {
+    display : flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section.category img {
+    width: 10%;
+}
+
+main section.category h2 {
+    font-size: 20px;
+}
+
+main section.category ul{
+    list-style: disc;
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+
