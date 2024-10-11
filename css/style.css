@@ -11,7 +11,46 @@
 } 
 
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+    background-color: white;
+}
+
+body p{
+    font-family: var(--text-font);
+}
+
+
+/* Style de la map */
+
+body section#map {
+    display: grid;
+    grid-template: repeat(17, 1fr) / repeat(25, 16px);
+    justify-content: center;
+}
+
+body section#map img {
+    grid-area: 1 / 1 / 26 / 26;
+}
+
+body section#map #button-edimbourg {
+    grid-area: 9 / 8;
+}
+
+body section#map #button-bruxelles {
+    grid-area: 11 / 11;
+}
+
+body section#map #button-budapest {
+    grid-area: 13 / 18;
+}
+
+body section#map #button-valence {
+    grid-area: 15 / 9;
 }
 
 body {
@@ -45,17 +84,14 @@ body section#map #button-budapest {
 
 body section#map #button-valence {
     grid-area: 15 / 9;
-  
-      box-sizing: border-box;
-  }
 
-  body {
+body {
     margin: 0;
     line-height: 1.5;
     background-color: white;
   }
 
-  body p{
+body p{
     font-family: var(--text-font);
   }
 
@@ -90,7 +126,6 @@ h1{
     justify-content:space-around;
     gap: 3rem;
     padding: 2rem;
-
 }
 
 .logocity {
@@ -163,3 +198,18 @@ footer span {
     width: 100%;
     padding: .5em 0 .5em 1em;
 } 
+
+
+/* Style des boutons d'ancrage page destination */
+
+body section#buttons-category {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+body section#buttons-category a img {
+    width: 15vw;
+}
