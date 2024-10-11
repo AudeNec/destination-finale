@@ -113,3 +113,53 @@ h1{
    -webkit-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
    -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
 }
+
+nav, footer {
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    font-size: 24px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40%;
+    padding: .5em;
+}
+
+#logo {
+    width: 45%;
+    height: auto;
+}
+
+#menu {
+    display: none;
+}
+
+#burger {
+    width: 10%;
+    height: auto;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1em;
+}
+footer span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: .5em 0 .5em 1em;
+} 
