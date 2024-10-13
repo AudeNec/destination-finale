@@ -10,7 +10,7 @@ nav, footer {
 
 nav {
     padding: .5em .5em 0.5em ;
-    gap: 0%;
+    gap: 50%;
 }
 
 nav img#logo {
@@ -20,9 +20,10 @@ height: auto;
 
 nav ul#menu {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
-    gap: 20%;
+    flex-grow: 1;
+    gap: 15%;
 }
 
 nav ul li {
