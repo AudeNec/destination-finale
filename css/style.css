@@ -197,8 +197,12 @@ main section.category img {
     width: 10%;
 }
 
+main section.category #arrow {
+    display: none;
+}
 main section.category h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
+    color: var(--main-color);
 }
 
 main section.category ul{
