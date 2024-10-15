@@ -229,10 +229,30 @@ footer ul {
 	width: 100%;
 	padding: 1em;
 }
+
 footer span {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	width: 100%;
 	padding: .5em 0 .5em 1em;
+}
+
+/* Style menu de navigation mobile */
+
+main ul.list-nav li.cat-nav {
+	padding: 2em 1em;
+}
+
+main ul.list-nav li.cat-nav:nth-child(odd) {
+	background-color: var(--secondary-color);
+}
+
+main ul.list-nav li.cat-nav:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+}
+
+main ul.list-nav li.cat-nav img#arrow {
+	width: 25px;
 }
