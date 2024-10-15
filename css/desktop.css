@@ -11,7 +11,8 @@ footer {
 
 nav {
 	padding: .5em .5em 0.5em;
-	gap: 50%;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav img#logo {
