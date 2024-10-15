@@ -236,3 +236,11 @@ footer span {
 	width: 100%;
 	padding: .5em 0 .5em 1em;
 }
+
+main #map button {
+	border-radius: 50%;
+	height: 1.5rem;
+	width: 1.5rem;
+	border: none;
+	background-color: transparent;
+}
