@@ -6,6 +6,9 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
+const array1 = document.querySelectorAll(".slide1");
+const previous = document.querySelectorAll(".previous")
+const next = document.querySelectorAll(".next")
 
 // Création de la navigation mobile
 
@@ -83,3 +86,19 @@ button.forEach((element) => {
 			: "./src/picto/heart_empty_yellow.png";
 	});
 
+	// slider
+array1.for slide1 of array1 {
+	const next.addEventListener("click", () => {
+		let number = 0; i < array1.length; i++;
+		result (number)
+
+	// 	if (numero < 0)
+	// 		numero = slide.length - 1;
+	// 	if (numero > slide.length - 1)
+	// 		numero = 0;
+	// 	document.getElementById("slide").src = slide[numero];
+	// });
+};
+
+
+// (let i = 0; i < array1.length; i++)
