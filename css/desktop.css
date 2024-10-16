@@ -103,19 +103,27 @@ main section.category header {
 	padding: 1rem 2rem;
 	justify-content: center;
 }
+
 main section.category #arrow {
 	display: inline-block;
 	width: 2%;
 }
 main section.category img {
-	width: 5%;
+    width: 5%;
 }
-main section.category ul {
-	background-color: var(--secondary-color);
-	padding-bottom: 1rem;
-	padding-left: 6rem;
-	width: 100%;
-	font-size: 1.2rem;
+main section.category ul{
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding : 2rem;
+    justify-content : space-between;
+}
+main section.category li img{
+    width: 100%;
+}
+
+main section#venir ul{
+    width : 100%;
+    display : flex;
 }
 
 /* Style du footer */
@@ -142,3 +150,4 @@ footer ul {
 footer ul li {
 	min-width: fit-content;
 }
+
