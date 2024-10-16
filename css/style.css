@@ -177,6 +177,23 @@ main section#photo .photodestination {
 	width: 100%;
 }
 
+main section.intro-city {
+	display: flex;
+	background-color: var(--secondary-color);
+	justify-content: space-around;
+	gap: 3rem;
+	padding: 2rem;
+}
+
+main section.intro-city div.fichecity p {
+	font-size: .8em;
+	font-weight: 300;
+	padding-bottom: 1rem;
+}
+
+main section.intro-city img.logocity {
+	height: 8rem;
+}
 /* Page Fiche destination - Style des boutons d'ancrage */
 
 main section#buttons-category {
