@@ -226,6 +226,7 @@ main section.category img {
 main section.category #arrow {
 	display: none;
 }
+
 main section.category h2 {
 	font-size: 1.5rem;
 	color: var(--main-color);
@@ -255,15 +256,47 @@ main section#venir ul {
 	padding-left: 2.5rem;
 }
 
+/* Style bouton remonter en haut */
+
+main section#up {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 2em 0;
+}
+
+main section button#btn-up {
+	background-color: transparent;
+	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	width: 175px;
+	cursor: pointer;
+	border: solid 3px var(--main-color);
+	border-radius: 50px;
+	height: 55px;
+}
+
+main section.category li img {
+	width: 80vw;
+}
+
+main section.category li a {
+	text-decoration: none;
+}
+main section.category li p {
+	text-align: center;
+}
+
+main section#venir ul {
+	display: inline-block;
+	padding-left: 2.5rem;
+}
+
 /* Style footer */
 
 footer {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	position: fixed;
 	width: 100%;
-	bottom: 0;
 }
 
 footer ul {
