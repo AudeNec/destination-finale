@@ -50,9 +50,13 @@ nav ul#menu {
 	display: none;
 }
 
-nav img#burger {
+nav img.btn-nav {
 	width: 10%;
 	height: auto;
+}
+
+nav img#cross {
+	display: none;
 }
 
 /* Style du header */
@@ -220,6 +224,9 @@ footer {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
 
 footer ul {

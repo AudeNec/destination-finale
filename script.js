@@ -4,6 +4,7 @@ const main = document.querySelector("main");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const burger = document.querySelector("#burger");
+const cross = document.querySelector("#cross");
 
 function buildNavigation() {
 	const mainNav = document.createElement("main");
@@ -31,11 +32,20 @@ function buildNavigation() {
 
 burger.addEventListener("click", () => {
 	main.style.display = "none";
+	burger.style.display = "none";
+	cross.style.display = "inline-block";
 	header.style.display = "none";
 	const mainNav = buildNavigation();
 	body.insertBefore(mainNav, body.childNodes[2]);
 	body.style.display = "flex";
 	body.style.flexDirection = "column";
 	body.style.justifyContent = "space-between";
-	burger.src = "./src/picto/cross.png";
+});
+
+cross.addEventListener("click", () => {
+	main.style.display = "block";
+	const mainNav = document.querySelector("main");
+	mainNav.style.display = "none";
+	burger.style.display = "inline-block";
+	cross.style.display = "none";
 });
