@@ -19,7 +19,6 @@ button.forEach((element) => {
 	element.addEventListener("click", () => {
 		button.forEach((btn) => {
 			if (btn !== element) {
-				btn.clicked = false;
 				const btnImg = btn.querySelector("img");
 				btnImg.src = "./src/picto/heart_empty_yellow.png";
 			}
