@@ -7,8 +7,8 @@ const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
 const array1 = document.querySelectorAll(".slide1");
-const previous = document.querySelectorAll(".previous")
-const next = document.querySelectorAll(".next")
+const previous = document.querySelector(".previous")
+const next = document.querySelector(".next")
 
 // Création de la navigation mobile
 
@@ -48,13 +48,13 @@ burger.addEventListener("click", () => {
 	body.style.justifyContent = "space-between";
 });
 
-cross.addEventListener("click", () => {
-	main.style.display = "block";
-	const mainNav = document.querySelector("main");
-	mainNav.style.display = "none";
-	burger.style.display = "inline-block";
-	cross.style.display = "none";
- });
+// cross.addEventListener("click", () => {
+// 	main.style.display = "block";
+// 	const mainNav = document.querySelector("main");
+// 	mainNav.style.display = "none";
+// 	burger.style.display = "inline-block";
+// 	cross.style.display = "none";
+//  });
 
  // Remplissage des coeurs
   
@@ -85,20 +85,33 @@ button.forEach((element) => {
 			? "./src/picto/heart_full_yellow.png"
 			: "./src/picto/heart_empty_yellow.png";
 	});
+});
 
 	// slider
-array1.for slide1 of array1 {
-	const next.addEventListener("click", () => {
-		let number = 0; i < array1.length; i++;
-		result (number)
 
-	// 	if (numero < 0)
-	// 		numero = slide.length - 1;
-	// 	if (numero > slide.length - 1)
-	// 		numero = 0;
-	// 	document.getElementById("slide").src = slide[numero];
-	// });
-};
-
-
-// (let i = 0; i < array1.length; i++)
+	
+	let sliderNumber = 1;
+	next.addEventListener("click", () => {
+		// j'incrémente activity et sliderNumber (ici devient 1), cache l'image en cours
+		document.querySelector("#activity" + sliderNumber).classList.add("hidden-image");
+		// je passe à l'image suivante
+		sliderNumber++;	
+		// si on dépasse le 3e on revient à 1
+		if (sliderNumber > 3) {
+			sliderNumber = 1;
+		}
+		// afficher la prochaine image
+		document.querySelector("#activity" + sliderNumber).classList.remove("hidden-image");
+	});
+	
+	previous.addEventListener("click", () => {
+		document.querySelector("#activity" + sliderNumber).classList.add("hidden-image");
+		sliderNumber--;
+		if (sliderNumber <1) {
+			sliderNumber = 3;
+		}
+		document.querySelector("#activity" + sliderNumber).classList.remove("hidden-image");
+	});
+		
+		
+	
