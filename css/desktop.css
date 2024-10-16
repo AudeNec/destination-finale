@@ -73,7 +73,7 @@ main section#map #button-valence {
 
 /* Style des card welcome + destination */
 
-main {
+main#main-accueil {
 	display: flex;
 }
 
@@ -99,6 +99,7 @@ main section#top-3,
 body section#manger {
 	background-color: var(--white-color);
 }
+
 main section.category header {
 	padding: 1rem 2rem;
 	justify-content: center;
@@ -109,21 +110,25 @@ main section.category #arrow {
 	width: 2%;
 }
 main section.category img {
-    width: 5%;
+	width: 5%;
 }
-main section.category ul{
-    background-color: var(--secondary-color);
-    font-size: 1.2rem;
-    padding : 2rem;
-    justify-content : space-between;
+main section.category ul {
+	background-color: var(--secondary-color);
+	font-size: 1.2rem;
+	padding: 2rem;
+	justify-content: space-between;
 }
-main section.category li img{
-    width: 100%;
+main section.category li img {
+	width: 100%;
 }
 
-main section#venir ul{
-    width : 100%;
-    display : flex;
+main section#venir ul {
+	width: 100%;
+	display: flex;
+}
+
+main section#up {
+	display: none;
 }
 
 /* Style du footer */
@@ -150,4 +155,3 @@ footer ul {
 footer ul li {
 	min-width: fit-content;
 }
-
