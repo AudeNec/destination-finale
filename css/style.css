@@ -50,9 +50,13 @@ nav ul#menu {
 	display: none;
 }
 
-nav img#burger {
+nav img.btn-nav {
 	width: 10%;
 	height: auto;
+}
+
+nav img#cross {
+	display: none;
 }
 
 /* Style du header */
@@ -78,6 +82,14 @@ main section#map {
 main section#map #map-img {
 	width: 400px;
 	grid-area: 1 / 1 / 26 / 26;
+}
+
+main section#map button {
+	border-radius: 50%;
+	height: 1.5rem;
+	width: 1.5rem;
+	border: none;
+	background-color: transparent;
 }
 
 main section#map #button-edimbourg {
@@ -239,6 +251,9 @@ footer {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
 }
 
 footer ul {
@@ -248,6 +263,7 @@ footer ul {
 	width: 100%;
 	padding: 1em;
 }
+
 footer span {
 	display: flex;
 	align-items: center;
@@ -256,10 +272,21 @@ footer span {
 	padding: .5em 0 .5em 1em;
 }
 
-main #map button {
-	border-radius: 50%;
-	height: 1.5rem;
-	width: 1.5rem;
-	border: none;
-	background-color: transparent;
+/* Style menu de navigation mobile */
+
+main ul.list-nav li.cat-nav {
+	padding: 2em 1em;
+}
+
+main ul.list-nav li.cat-nav:nth-child(odd) {
+	background-color: var(--secondary-color);
+}
+
+main ul.list-nav li.cat-nav:nth-child(2) {
+	display: flex;
+	justify-content: space-between;
+}
+
+main ul.list-nav li.cat-nav img#arrow {
+	width: 25px;
 }
