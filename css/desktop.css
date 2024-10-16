@@ -1,3 +1,18 @@
+@media (min-width: 720px) {
+	body {
+		--screen: "desktop";
+	}
+}
+
+@keyframes open-category {
+	from {
+		height: 0;
+	}
+	to {
+		height: auto;
+	}
+}
+
 /* Style de la nav */
 
 nav,
@@ -85,7 +100,7 @@ main section#welcome {
 	width: 50%;
 }
 
-/* Page Fiche destination - Style des boutons d'ancrage */
+/* Page Fiche destination */
 
 main section#buttons-category {
 	display: none;
@@ -117,14 +132,21 @@ main section.category ul {
 	font-size: 1.2rem;
 	padding: 2rem;
 	justify-content: space-between;
+	display: none;
+	overflow: hidden;
 }
+
+main section.category ul.open {
+	animation: open-category 2s linear 0s 1 normal;
+}
+
 main section.category li img {
 	width: 100%;
 }
 
 main section#venir ul {
 	width: 100%;
-	display: flex;
+	display: none;
 }
 
 main section#up {
