@@ -140,23 +140,34 @@ main section.city img.logocity {
 }
 
 main section.city div.fichecity button {
-	width: 166.03px;
-	height: 47.1px;
-	background-color: var(--third-color);
-	font-family: var(--title-font);
-	font-weight: bold;
-	border-radius: 25px;
+	background-image: linear-gradient(
+		to right,
+		#eac435,
+		#f4b041,
+		#f07e4d,
+		#b44e8a,
+		#219ebc
+	);
+	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	-webkit-box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	-moz-box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	width: 175px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	margin: 20px;
+	height: 55px;
+	text-align: center;
 	border: none;
-	box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
-	-webkit-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
-	-moz-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
+	background-size: 300% 100%;
+	border-radius: 50px;
+	transition: all .4s ease-in-out;
 }
 
 main section.city div.fichecity button:hover {
-	border: 3px solid var(--third-color);
-	background-color: #fff;
-	cursor: pointer;
-	transition: background-color 0.4s ease, color 0.4s ease;
+	background-position: 100% 0;
+	transition: all .4s ease-in-out;
 }
 
 /* Page Fiche destination - Dimensionnement photo ville*/
