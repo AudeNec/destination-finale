@@ -47,6 +47,11 @@ nav ul li {
 	min-width: fit-content;
 }
 
+nav ul li a {
+	text-decoration: none;
+	color: var(--white-color);
+}
+
 nav img#burger {
 	display: none;
 }
@@ -101,6 +106,20 @@ main section#welcome {
 }
 
 /* Page Fiche destination */
+
+main div#intro-destination {
+	display: flex;
+}
+
+main .photodestination {
+	width: 50vw;
+	height: max-content;
+	object-fit: cover;
+}
+
+main section.intro-city {
+	align-items: center;
+}
 
 main section#buttons-category {
 	display: none;
