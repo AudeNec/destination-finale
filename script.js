@@ -7,6 +7,10 @@ const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
 const footer = document.querySelector("footer");
+const categorySections = document.querySelectorAll("main section.category");
+const screen = getComputedStyle(document.body)
+	.getPropertyValue("--screen")
+	.replace(/\W/g, "");
 
 // Création de la navigation mobile
 
@@ -88,3 +92,23 @@ button.forEach((element) => {
 		img.src = "./src/picto/heart_full_yellow.png";
 	});
 });
+
+// Ouverture des catégories
+
+if (screen === "desktop") {
+	// biome-ignore lint/complexity/noForEach: <explanation>
+	categorySections.forEach((categorySection) => {
+		const categoryHeader = categorySection.querySelector("header");
+		const categoryContent = categorySection.querySelector("ul");
+		const categoryArrow = categorySection.querySelector("#arrow");
+		categoryHeader.addEventListener("click", () => {
+			if (categoryContent.style.display !== "flex") {
+				categoryContent.style.display = "flex";
+				categoryArrow.src = "src/picto/arrow_top_blue.png";
+			} else {
+				categoryContent.style.display = "none";
+				categoryArrow.src = "src/picto/arrow_down_blue.png";
+			}
+		});
+	});
+}
