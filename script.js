@@ -25,6 +25,7 @@ const discoverLink = [
 	"./destination-finale/budapest.html",
 	"./destination-finale/valence.html",
 ];
+const footer = document.querySelector("footer");
 
 // Création de la navigation mobile
 
@@ -62,6 +63,8 @@ burger.addEventListener("click", () => {
 	body.style.display = "flex";
 	body.style.flexDirection = "column";
 	body.style.justifyContent = "space-between";
+	footer.style.position = "fixed";
+	footer.style.bottom = "0px";
 });
 
 cross.addEventListener("click", () => {
@@ -70,6 +73,8 @@ cross.addEventListener("click", () => {
 	mainNav.style.display = "none";
 	burger.style.display = "inline-block";
 	cross.style.display = "none";
+	footer.style.position = "static";
+	footer.style.removeProperty("bottom");
 });
 
 // Remplissage des coeurs
@@ -89,6 +94,7 @@ button.forEach((element, index) => {
 		}
 	});
 	element.addEventListener("click", () => {
+		// biome-ignore lint/complexity/noForEach: <explanation>
 		// biome-ignore lint/complexity/noForEach: <explanation>
 		button.forEach((btn) => {
 			if (btn !== element) {
