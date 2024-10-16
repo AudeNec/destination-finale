@@ -62,15 +62,15 @@ cross.addEventListener("click", () => {
 
 // biome-ignore lint/complexity/noForEach: <explanation>
 button.forEach((element) => {
-	let clicked = false;
+	element.clicked = false;
 	const img = element.querySelector("img");
 	element.addEventListener("mouseover", () => {
-		if (!clicked) {
+		if (!element.clicked) {
 			img.src = "./src/picto/heart_full_yellow.png";
 		}
 	});
 	element.addEventListener("mouseout", () => {
-		if (!clicked) {
+		if (!element.clicked) {
 			img.src = "./src/picto/heart_empty_yellow.png";
 		}
 	});
@@ -80,12 +80,11 @@ button.forEach((element) => {
 			if (btn !== element) {
 				const btnImg = btn.querySelector("img");
 				btnImg.src = "./src/picto/heart_empty_yellow.png";
+				btn.clicked = false;
 			}
 		});
 
-		clicked = true;
-		img.src = clicked
-			? "./src/picto/heart_full_yellow.png"
-			: "./src/picto/heart_empty_yellow.png";
+		element.clicked = true;
+		img.src = "./src/picto/heart_full_yellow.png";
 	});
 });
