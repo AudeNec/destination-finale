@@ -6,10 +6,29 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
+const cardcity = document.querySelector(".city");
+const arrLogo = [
+	"./src/logo-villes/kilt_blue.png",
+	"./src/logo-villes/fries_blue.png",
+	"./src/logo-villes/thermal_blue.png",
+	"./src/logo-villes/fan_blue.png",
+];
+const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
+const arrParag = ["Blabla1", "Blabla2", "Blabla3", "Blabla4"];
+const logo = document.querySelector(".logocity");
+const title = document.querySelector(".fichecity h1");
+const parag = document.querySelector(".fichecity p");
+const discover = document.querySelector(".fichecity button");
+const discoverLink = [
+	"./destination-finale/edimbourg.html",
+	"./destination-finale/bruxelles.html",
+	"./destination-finale/budapest.html",
+	"./destination-finale/valence.html",
+];
 
 // Création de la navigation mobile
 
-function buildNavigation() {
+() => {
 	const mainNav = document.createElement("main");
 	const ulNav = document.createElement("ul");
 	ulNav.classList.add("list-nav");
@@ -31,7 +50,7 @@ function buildNavigation() {
 	ulNav.appendChild(aPropos);
 	mainNav.appendChild(ulNav);
 	return mainNav;
-}
+};
 
 burger.addEventListener("click", () => {
 	main.style.display = "none";
@@ -56,7 +75,7 @@ cross.addEventListener("click", () => {
 // Remplissage des coeurs
 
 // biome-ignore lint/complexity/noForEach: <explanation>
-button.forEach((element) => {
+button.forEach((element, index) => {
 	element.clicked = false;
 	const img = element.querySelector("img");
 	element.addEventListener("mouseover", () => {
@@ -70,6 +89,7 @@ button.forEach((element) => {
 		}
 	});
 	element.addEventListener("click", () => {
+		// biome-ignore lint/complexity/noForEach: <explanation>
 		button.forEach((btn) => {
 			if (btn !== element) {
 				const btnImg = btn.querySelector("img");
@@ -80,5 +100,16 @@ button.forEach((element) => {
 
 		element.clicked = true;
 		img.src = "./src/picto/heart_full_yellow.png";
+	});
+	element.addEventListener("click", () => {
+		const welcome = document.querySelector("#welcome");
+		welcome.style.display = "none";
+		cardcity.style.display = "flex";
+		title.innerText = arrTitle[index];
+		parag.innerText = arrParag[index];
+		logo.src = arrLogo[index];
+		document
+			.querySelector(".fichecity button")
+			.setAttribute("href", discoverLink[index]);
 	});
 });
