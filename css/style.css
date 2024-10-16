@@ -1,262 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Life+Savers:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Life+Savers:wght@400;700;800&display=swap");
 
 :root {
-  --main-color: #219EBC;
-  --secondary-color: #d2eaf5;
-  --third-color: #EAC435;
-  --dark-color: #272727;
-  --title-font: "Life Savers", sans-serif;
-  --text-font: "Kanit", sans-serif;
-  --white-color: white;
-} 
+	--main-color: #219ebc;
+	--secondary-color: #d2eaf5;
+	--third-color: #eac435;
+	--dark-color: #272727;
+	--title-font: "Life Savers", sans-serif;
+	--text-font: "Kanit", sans-serif;
+	--white-color: white;
+}
 
-*{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    line-height: 1.5;
-    background-color: var(--white-color);
-    font-family: var(--text-font);
-  }
+	margin: 0;
+	line-height: 1.5;
+	background-color: var(--white-color);
+	font-family: var(--text-font);
+}
 
 /* Style de la nav */
 
-  nav, footer {
-    background-color: var(--main-color);
-    font-family: var(--text-font);
-    color: var(--white-color);
-    font-weight: 300;
-    font-size: .7em;
+nav,
+footer {
+	background-color: var(--main-color);
+	font-family: var(--text-font);
+	color: var(--white-color);
+	font-weight: 300;
+	font-size: .7em;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40%;
-    padding: .5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: .5em;
 }
 
-nav #logo {
-    width: 45%;
-    height: auto;
+nav img#logo {
+	width: 45%;
+	height: auto;
 }
 
-nav #menu {
-    display: none;
+nav ul#menu {
+	display: none;
 }
 
-nav #burger {
-    width: 10%;
-    height: auto;
+nav img#burger {
+	width: 10%;
+	height: auto;
 }
 
 /* Style du header */
 
 header#main-header {
-    background-color: var(--main-color);
-    font-family: var(--title-font); 
-    font-size: 1.7em;
-    font-weight: 500;
-    color: var(--white-color);
-    text-align: center;
-    padding: 1rem;
+	background-color: var(--main-color);
+	font-family: var(--title-font);
+	font-size: 1.7em;
+	font-weight: 500;
+	color: var(--white-color);
+	text-align: center;
+	padding: 1rem;
 }
 
 /* Style de la map */
 
-body section#map {
-    display: grid;
-    grid-template: repeat(17, 1fr) / repeat(25, 16px);
-    justify-content: center;
+main section#map {
+	display: grid;
+	grid-template: repeat(17, 1fr) / repeat(25, 16px);
+	justify-content: center;
 }
 
-body section#map img {
-    grid-area: 1 / 1 / 26 / 26;
+main section#map #map-img {
+	width: 400px;
+	grid-area: 1 / 1 / 26 / 26;
 }
 
-body section#map #button-edimbourg {
-    grid-area: 9 / 8;
+main section#map #button-edimbourg {
+	grid-area: 9 / 8;
 }
 
-body section#map #button-bruxelles {
-    grid-area: 11 / 11;
+main section#map #button-bruxelles {
+	grid-area: 11 / 11;
 }
 
-body section#map #button-budapest {
-    grid-area: 13 / 18;
+main section#map #button-budapest {
+	grid-area: 13 / 18;
 }
 
-body section#map #button-valence {
-    grid-area: 15 / 9;
+main section#map #button-valence {
+	grid-area: 15 / 9;
 }
 
-body section#map {
-  display: grid;
-  grid-template: repeat(17, 1fr) / repeat(25, 16px);
-  justify-content: center;
+/* Style fiche Welcome */
+
+main section#welcome h1 {
+	font-weight: 800;
+	font-size: 1.5em;
+	font-family: var(--title-font);
 }
 
-body section#map img {
-    grid-area: 1 / 1 / 26 / 26;
+main section#welcome {
+	display: flex;
+	background-color: var(--secondary-color);
+	height: auto;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 1rem;
 }
 
-body section#map #button-edimbourg {
-    grid-area: 9 / 8;
-}
-
-body section#map #button-bruxelles {
-    grid-area: 11 / 11;
-}
-
-body section#map #button-budapest {
-    grid-area: 13 / 18;
-}
-
-body section#map #button-valence {
-    grid-area: 15 / 9;
-}
-
-body {
-    margin: 0;
-    line-height: 1.5;
-    background-color: white;
-  }
-
-body p{
-    font-family: var(--text-font);
-  }
-
-h1{
-    font-weight: 800;
-    font-size: 1.5em;
-    font-family: var(--title-font);
-}
-
-#welcome {
-    display: flex;
-    background-color: var(--secondary-color);
-    height: auto;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 1rem;
-}
-
-
-#welcome p {
-    font-size: 1em;
+main section#welcome p {
+	font-size: 1em;
 }
 
 /* Style carte ville */
 
-.fichecity p {
-    font-size: .8em; 
-    font-weight: 300;
+main section.city {
+	display: flex;
+	background-color: var(--secondary-color);
+	justify-content: space-around;
+	gap: 3rem;
+	padding: 2rem;
 }
 
-.city{
-    display: flex;
-    background-color: var(--secondary-color);
-    justify-content:space-around;
-    gap: 3rem;
-    padding: 2rem;
+main section.city div.fichecity p {
+	font-size: .8em;
+	font-weight: 300;
+	padding-bottom: 1rem;
 }
 
-.logocity {
-    height: 8rem;
+main section.city img.logocity {
+	height: 8rem;
 }
 
-.fichecity p{
-    padding-bottom: 1rem;
+main section.city div.fichecity button {
+	width: 166.03px;
+	height: 47.1px;
+	background-color: var(--third-color);
+	font-family: var(--title-font);
+	font-weight: bold;
+	border-radius: 25px;
+	border: none;
+	box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
+	-webkit-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
+	-moz-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
 }
 
-.fichecity button{
-   width: 166.03px;
-   height: 47.1px;
-   background-color: var(--third-color);
-   font-family: var(--title-font);
-   font-weight: bold;
-   border-radius: 25px;
-   border: none;
-   box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
-   -webkit-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
-   -moz-box-shadow: 8px 8px 13px -1px rgba(28,25,25,0.61);
+main section.city div.fichecity button:hover {
+	border: 3px solid var(--third-color);
+	background-color: #fff;
+	cursor: pointer;
+	transition: background-color 0.4s ease, color 0.4s ease;
 }
-
-/* Style footer */
-
-footer{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-footer ul {
-    display: flex;
-    align-items: center; 
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 1em;
-}
-footer span {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding: .5em 0 .5em 1em;
-} 
 
 /* Page Fiche destination - Dimensionnement photo ville*/
 
 main section#photo .photodestination {
-    width: 100%;
+	width: 100%;
 }
 
 /* Page Fiche destination - Style des boutons d'ancrage */
 
 main section#buttons-category {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    padding: 1rem 2rem;
-    width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	padding: 1rem 2rem;
+	width: 100%;
 }
 
 main section#buttons-category a img {
-    width: 15vw;
+	width: 15vw;
 }
 
 /* Page Fiche destination - Style categories de la fiche */
 
 main section.category {
-    padding : 1rem 2rem;
+	padding: 1rem 2rem;
 }
 
-main section#top-3, body section#manger {
-    background-color: var(--secondary-color);
+main section#top-3,
+body section#manger {
+	background-color: var(--secondary-color);
 }
 
 main section.category header {
-    display : flex;
-    align-items: center;
-    gap: 1rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 main section.category img {
-    width: 10%;
+	width: 10%;
 }
 
 main section.category #arrow {
-    display: none;
+	display: none;
 }
 main section.category h2 {
-    font-size: 1.5rem;
-    color: var(--main-color);
+	font-size: 1.5rem;
+	color: var(--main-color);
 }
 
 main section.category ul{
@@ -282,4 +231,35 @@ main section.category li p{
 main section#venir ul{
     display: inline-block;
     padding-left: 2.5rem;
+}
+
+/* Style footer */
+
+footer {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 1em;
+}
+footer span {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	padding: .5em 0 .5em 1em;
+}
+
+main #map button {
+	border-radius: 50%;
+	height: 1.5rem;
+	width: 1.5rem;
+	border: none;
+	background-color: transparent;
 }

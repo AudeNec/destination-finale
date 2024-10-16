@@ -1,24 +1,112 @@
+/* Style de la nav */
+
+nav,
+footer {
+	background-color: var(--main-color);
+	font-family: var(--text-font);
+	color: var(--white-color);
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+nav {
+	padding: .5em .5em 0.5em;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav img#logo {
+	width: 15em;
+	height: auto;
+}
+
+nav ul#menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-grow: 1;
+	gap: 15%;
+}
+
+nav ul li {
+	min-width: fit-content;
+}
+
+nav img#burger {
+	display: none;
+}
+
+/* Style du header */
+
+header#main-header {
+	font-size: 3em;
+	font-weight: 600;
+	padding: .5em 0 1em 0;
+}
+
+/* Style de la map */
+
+main section#map {
+	width: 50%;
+	grid-template: repeat(17, 1fr) / repeat(25, 20px);
+}
+
+main section#map #map-img {
+	width: 550px;
+}
+
+main section#map #button-edimbourg {
+	grid-area: 9 / 9;
+}
+
+main section#map #button-bruxelles {
+	grid-area: 11 / 12;
+}
+
+main section#map #button-budapest {
+	grid-area: 13 / 19;
+}
+
+main section#map #button-valence {
+	grid-area: 15 / 10;
+}
+
+/* Style des card welcome + destination */
+
+main {
+	display: flex;
+}
+
+main section.city {
+	display: none;
+}
+
+main section#welcome {
+	width: 50%;
+}
+
 /* Page Fiche destination - Style des boutons d'ancrage */
 
 main section#buttons-category {
-    display: none;
+	display: none;
 }
 
 main section.category {
-    padding : 0rem 0rem;
+	padding: 0rem 0rem;
 }
 
-main section#top-3, body section#manger {
-    background-color: var(--white-color);
+main section#top-3,
+body section#manger {
+	background-color: var(--white-color);
 }
 main section.category header {
-    padding : 1rem 2rem;
-    justify-content: center;
+	padding: 1rem 2rem;
+	justify-content: center;
 }
 
 main section.category #arrow {
-    display: inline-block;
-    width: 2%;
+	display: inline-block;
+	width: 2%;
 }
 main section.category img {
     width: 5%;
@@ -37,3 +125,29 @@ main section#venir ul{
     width : 100%;
     display : flex;
 }
+
+/* Style du footer */
+
+footer {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+footer span {
+	width: 48%;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	padding: 1em 2em 1em 2em;
+	width: 48%;
+}
+
+footer ul li {
+	min-width: fit-content;
+}
+
