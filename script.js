@@ -1,10 +1,13 @@
-// Création de la navigation mobile
-
 const main = document.querySelector("main");
 const body = document.querySelector("body");
 const header = document.querySelector("header");
 const burger = document.querySelector("#burger");
 const cross = document.querySelector("#cross");
+const button = document.querySelectorAll(
+	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
+);
+
+// Création de la navigation mobile
 
 function buildNavigation() {
 	const mainNav = document.createElement("main");
@@ -48,4 +51,35 @@ cross.addEventListener("click", () => {
 	mainNav.style.display = "none";
 	burger.style.display = "inline-block";
 	cross.style.display = "none";
-});
+ });
+
+ // Remplissage des coeurs
+  
+// biome-ignore lint/complexity/noForEach: <explanation>
+button.forEach((element) => {
+	let clicked = false;
+	const img = element.querySelector("img");
+	element.addEventListener("mouseover", () => {
+		if (!clicked) {
+			img.src = "./src/picto/heart_full_yellow.png";
+		}
+	});
+	element.addEventListener("mouseout", () => {
+		if (!clicked) {
+			img.src = "./src/picto/heart_empty_yellow.png";
+		}
+	});
+	element.addEventListener("click", () => {
+		button.forEach((btn) => {
+			if (btn !== element) {
+				const btnImg = btn.querySelector("img");
+				btnImg.src = "./src/picto/heart_empty_yellow.png";
+			}
+		});
+
+		clicked = true;
+		img.src = clicked
+			? "./src/picto/heart_full_yellow.png"
+			: "./src/picto/heart_empty_yellow.png";
+	});
+
