@@ -30,3 +30,4 @@ button.forEach((element) => {
 			: "./src/picto/heart_empty_yellow.png";
 	});
 });
+
