@@ -184,7 +184,6 @@ main section.city div.fichecity button {
 	background-size: 300% 100%;
 	border-radius: 50px;
 	transition: all .4s ease-in-out;
-	margin-bottom: 30rem;
 }
 
 main section.city div.fichecity button:hover {
