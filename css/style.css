@@ -144,7 +144,7 @@ main section.city {
 	background-color: var(--secondary-color);
 	justify-content: space-around;
 	gap: 3rem;
-	padding: 2rem;
+	padding: 3rem;
 }
 
 main section.city div.fichecity h1 {
@@ -178,13 +178,13 @@ main section.city div.fichecity button {
 	font-weight: 600;
 	color: #fff;
 	cursor: pointer;
-	margin: 20px;
 	height: 55px;
 	text-align: center;
 	border: none;
 	background-size: 300% 100%;
 	border-radius: 50px;
 	transition: all .4s ease-in-out;
+	margin-bottom: 30rem;
 }
 
 main section.city div.fichecity button:hover {
@@ -320,8 +320,16 @@ main section.category ul .next {
 	margin-right: 3%;
 }
 
-
-main section.category ul main section.category ul.slider:hover main section.category ul .previous,
+main
+	section.category
+	ul
+	main
+	section.category
+	ul.slider:hover
+	main
+	section.category
+	ul
+	.previous,
 .slider:hover .next {
 	opacity: 1;
 }
