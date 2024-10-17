@@ -169,10 +169,10 @@ if (screen === "desktop") {
 		const categoryArrow = categorySection.querySelector("#arrow");
 		categoryHeader.addEventListener("click", () => {
 			if (categoryContent.classList.contains("hidden")) {
-				categoryContent.classList = "open";
+				categoryContent.classList.replace("hidden" "open");
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
-				categoryContent.classList = "hidden";
+				categoryContent.classList.replace("open" "hidden")";
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
