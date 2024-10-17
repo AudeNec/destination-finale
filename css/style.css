@@ -90,6 +90,7 @@ main section#map button {
 	width: 1.5rem;
 	border: none;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 main section#map #button-edimbourg {
@@ -139,6 +140,10 @@ main section.city {
 	justify-content: space-around;
 	gap: 3rem;
 	padding: 2rem;
+}
+
+main section.city div.fichecity h1 {
+	padding-bottom: 1rem;
 }
 
 main section.city div.fichecity p {

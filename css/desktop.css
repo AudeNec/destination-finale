@@ -64,6 +64,9 @@ header#main-header {
 	padding: .5em 0 1em 0;
 }
 
+main {
+	align-items: center;
+}
 /* Style de la map */
 
 main section#map {
@@ -100,10 +103,23 @@ main#main-accueil {
 
 main section.city {
 	display: none;
+	height: 15rem;
+	width: 30rem;
+	border-radius: 50px;
+	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+}
+
+main div.fichecity {
+	height: 10rem;
+}
+
+main section.city div.fichecity button {
+	margin: 0;
 }
 
 main section#welcome {
 	width: 50%;
+	height: 100vh;
 }
 
 /* Page Fiche destination */

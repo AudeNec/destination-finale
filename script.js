@@ -6,6 +6,7 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
+const buttons = document.querySelectorAll("button");
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
@@ -14,7 +15,12 @@ const arrLogo = [
 	"./src/logo-villes/fan_blue.png",
 ];
 const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
-const arrParag = ["Blabla1", "Blabla2", "Blabla3", "Blabla4"];
+const arrParag = [
+	"Blabla1",
+	"Blabla2",
+	"Blabla3",
+	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des arts et des sciences, à l'architecture futuriste.",
+];
 const logo = document.querySelector(".logocity");
 const title = document.querySelector(".fichecity h1");
 const parag = document.querySelector(".fichecity p");
@@ -25,6 +31,7 @@ const discoverLink = [
 	"budapest.html",
 	"valence.html",
 ];
+const welcome = document.querySelector("#welcome");
 const footer = document.querySelector("footer");
 const categorySections = document.querySelectorAll("main section.category");
 const screen = getComputedStyle(document.body)
@@ -112,7 +119,6 @@ button.forEach((element, index) => {
 		img.src = "./src/picto/heart_full_yellow.png";
 	});
 	element.addEventListener("click", () => {
-		const welcome = document.querySelector("#welcome");
 		welcome.style.display = "none";
 		cardcity.style.display = "flex";
 		title.innerText = arrTitle[index];
@@ -122,6 +128,21 @@ button.forEach((element, index) => {
 			.querySelector(".fichecity button")
 			.setAttribute("href", discoverLink[index]);
 	});
+});
+
+document.addEventListener("click", function (event) {
+	let clickedbutton = false;
+
+	buttons.forEach((btn) => {
+		if (btn.contains(event.target)) {
+			clickedbutton = true;
+		}
+	});
+
+	if (!clickedbutton) {
+		welcome.style.display = "flex";
+		cardcity.style.display = "none";
+	}
 });
 
 // Ouverture des catégories
