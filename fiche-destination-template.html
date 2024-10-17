@@ -60,24 +60,24 @@
                 <ul class="slider hidden">
                     <li class="slide1" id="activity1">
                          <a href="https://www.google.fr/maps/place/Cimeti%C3%A8re+du+P%C3%A8re-Lachaise/@48.8636416,2.4018944,14z/data=!4m6!3m5!1s0x47e66d8b5c69a785:0xa1cf6127530b6419!8m2!3d48.861472!4d2.3934725!16zL20vMDJmcmZr?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-                        <img id="ville1-activite1" src="/Users/marinamassot/wild-school/first-project/destination-finale/src/photo-brussels/grand-place.jpg" alt="Super activité 1">
+                        <img id="ville1-activite1" src="src\photo-brussels\photo-grand-place.jpg" alt="Super activité 1">
                         <p>Super activité 1 📍</p>
                         </a>
                     </li>
                     <li class="slide1 hidden-image" id="activity2">
                          <a href="" target="_blank">
-                        <img id="ville1-activite2" src="/Users/marinamassot/wild-school/first-project/destination-finale/src/photo-brussels/houses.jpg" alt="Super activité 2">
+                        <img id="ville1-activite2" src="src\photo-brussels\photo-houses.jpg" alt="Super activité 2">
                         <p>Super activité 2 📍</p>
                         </a>
                     </li>
                     <li class="slide1 hidden-image" id="activity3">
                         <a href="" target="_blank">
-                        <img id="ville1-activite3" src="/Users/marinamassot/wild-school/first-project/destination-finale/src/photo-brussels/sablons.jpg" alt="Super activité 3">
+                        <img id="ville1-activite3" src="src\photo-brussels\photo-sablons.jpg" alt="Super activité 3">
                         <p>Super activité 3 📍</p>
                         </a>
                     </li>
-                    <div class="previous"><</div>
-                    <div class="next">></div>
+                    <div class="previous" id="previous-activity"><</div>
+                    <div class="next" id="next-activity">></div>
                 </ul>
         </section>
         <section id="sortir" class="category">
@@ -86,27 +86,27 @@
                 <img  src="src\picto\drink_blue.png" alt="pictogramme bière en bleu">
                 <h2>Où sortir ?</h2>
             </header>
-            <ul class="hidden">
-                <li>
+            <ul class="slider hidden">
+                <li class="slide1" id="drink1">
                     <a href="" target="_blank">
-                    <img id="ville1-activite1" src="src\photovalence\photovalence1.jpg" alt="Super bière">
+                    <img id="ville1-sortie1" src="src\photovalence\photovalence1.jpg" alt="Super bière">
                     <p>Super bière 📍</p>
                     </a>
                 </li>
-                <li class="">
+                <li class="slide1 hidden-image" id="drink2">
                     <a href="" target="_blank">
-                    <img id="ville1-activite2" src="src\photovalence\photovalence1.jpg" alt="Cocktails top">
+                    <img id="ville1-sortie2" src="src\photovalence\photovalence2.jpg" alt="Cocktails top">
                     <p>Cocktails top 📍</p>
                     </a>
                 </li>
-                <li class="">
+                <li class="slide1 hidden-image" id="drink3">
                     <a href="" target="_blank">
-                    <img id="ville1-activite3" src="src\photovalence\photovalence1.jpg" alt="Dancefloor on fire">
+                    <img id="ville1-sortie3" src="src\photovalence\photovalence3.jpg" alt="Dancefloor on fire">
                     <p>Dancefloor on fire 📍</p>
                     </a>
                 </li>
-                <div class="previous" onclick="ChangeSlide(-1)"><</div>
-                <div class="next" onclick="ChangeSlide(1)">></div>
+                <div class="previous" id="previous-drink"><</div>
+                <div class="next" id="next-drink">></div>
             </ul>
         </section>
         <section id="manger" class="category">
@@ -115,27 +115,27 @@
                 <img src="src\picto\eat_blue.png" alt="pictogramme assiette bleu">
                 <h2>Où manger ?</h2>
             </header>   
-            <ul class="hidden">
-                <li>
+            <ul class="slider hidden">
+                <li class="slide1" id="eat1">
                     <a href="" target="_blank">
-                    <img id="ville1-activite1" src="src\photovalence\photovalence1.jpg" alt="Tapas à tomber">
+                    <img id="ville1-manger1" src="src\photo-brussels\manger-guiguette.jpg" alt="Tapas à tomber">
                     <p>Tapas à tomber 📍</p>
                     </a>
                 </li>
-                <li class="">
+                <li class="slide1 hidden-image" id="eat2">
                     <a href="" target="_blank">
-                    <img id="ville1-activite2" src="src\photovalence\photovalence1.jpg" alt="Les meilleurs frites de votre vie">
+                    <img id="ville1-manger2" src="src\photo-brussels\manger-maison-antoine.jpg" alt="Les meilleurs frites de votre vie">
                     <p>Les meilleurs frites de votre vie 📍</p>
                     </a>
                 </li>
-                <li class="">
+                <li class="slide1 hidden-image" id="eat3">
                     <a href="" target="_blank">
-                    <img id="ville1-activite3" src="src\photovalence\photovalence1.jpg" alt="Petit boui boui au top">
+                    <img id="ville1-manger3" src="src\photo-brussels\manger-wolf.png" alt="Petit boui boui au top">
                     <p>Petit boui boui au top 📍</p>
                     </a>
                 </li>
-                <div class="previous" onclick="ChangeSlide(-1)"><</div>
-                <div class="next" onclick="ChangeSlide(1)">></div>
+                <div class="previous" id="previous-eat"><</div>
+                <div class="next" id="next-eat">></div>
             </ul>
         </section>
         <section id="venir" class="category">
@@ -173,5 +173,6 @@
         <span>© Tous droits réservés - Destination Finale</span>
     </footer>
     <script src="script.js"></script> 
+    <script src="script-sliders.js"></script> 
 </body>
 </html>
