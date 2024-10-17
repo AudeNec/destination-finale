@@ -55,6 +55,7 @@ nav {
 	padding: .5em .5em 0.5em;
 	display: flex;
 	justify-content: space-between;
+	position: relative;
 }
 
 nav img#logo {
@@ -163,6 +164,7 @@ main .photodestination {
 
 main section.intro-city {
 	align-items: center;
+	width: 100%;
 }
 
 main section#buttons-category {
@@ -244,4 +246,27 @@ footer ul {
 
 footer ul li {
 	min-width: fit-content;
+}
+
+/* Menu déroulant destination desktop */
+
+nav #nav-destination {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+nav ul.list-destination {
+	position: relative;
+	display: none;
+	flex-direction: column;
+	background-color: var(--main-color);
+	position: absolute;
+	top: 90px;
+	/* box-shadow: 12px 11px 49px 3px black; */
+}
+
+nav ul.list-destination li {
+	border-bottom: solid white 1px;
+	padding: 0.5em 2em;
 }
