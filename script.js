@@ -137,6 +137,7 @@ if (screen === "desktop") {
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
 				categoryContent.classList.replace("open", "hidden");
+
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
