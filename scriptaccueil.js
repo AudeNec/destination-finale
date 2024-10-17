@@ -131,9 +131,10 @@ button.forEach((element, index) => {
 	});
 });
 
-document.addEventListener("click", function (event) {
+document.addEventListener("click", (event) => {
 	let clickedbutton = false;
 
+	// biome-ignore lint/complexity/noForEach: <explanation>
 	buttons.forEach((btn) => {
 		if (btn.contains(event.target)) {
 			clickedbutton = true;
@@ -143,5 +144,11 @@ document.addEventListener("click", function (event) {
 	if (!clickedbutton) {
 		welcome.style.display = "flex";
 		cardcity.style.display = "none";
+		// biome-ignore lint/complexity/noForEach: <explanation>
+		button.forEach((btn) => {
+			const btnImg = btn.querySelector("img");
+			btnImg.src = "./src/picto/heart_empty_yellow.png";
+			btn.clicked = false;
+		});
 	}
 });
