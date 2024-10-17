@@ -14,7 +14,7 @@ const arrParag = [
 	"Blabla1",
 	"Découvrez la capitale de la Belgique qui allie richesse historique, carrefour culturel et ambiance cosmopolite, au cœur de l'Europe.",
 	"Blabla3",
-	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des arts et des sciences, à l'architecture futuriste.",
+	"Blabla4",
 ];
 const logo = document.querySelector(".logocity");
 const title = document.querySelector(".fichecity h1");
