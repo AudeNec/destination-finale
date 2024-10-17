@@ -3,16 +3,8 @@ const body = document.querySelector("body");
 const header = document.querySelector("header");
 const burger = document.querySelector("#burger");
 const cross = document.querySelector("#cross");
-const button = document.querySelectorAll(
-	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
-);
-const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
-const discoverLink = [
-	"edimbourg.html",
-	"bruxelles.html",
-	"budapest.html",
-	"valence.html",
-];
+const footer = document.querySelector("footer");
+
 const navDestination = document.querySelector("#nav-destination");
 const ulDestination = document.querySelector(".list-destination");
 const liDestination = document.querySelector(".destination-nav");

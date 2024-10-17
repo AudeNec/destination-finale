@@ -1,3 +1,7 @@
+const categorySections = document.querySelectorAll("main section.category");
+const screen = getComputedStyle(document.body)
+    .getPropertyValue("--screen")
+    .replace(/\W/g, "");
 const previousActivity = document.querySelector("#previous-activity")
 const nextActivity = document.querySelector("#next-activity")
 const previousDrink = document.querySelector("#previous-drink")
@@ -5,6 +9,29 @@ const nextDrink = document.querySelector("#next-drink")
 const previousEat = document.querySelector("#previous-eat")
 const nextEat = document.querySelector("#next-eat")
 
+// Ouverture des catégories
+
+if (screen === "desktop") {
+	// biome-ignore lint/complexity/noForEach: <explanation>
+	categorySections.forEach((categorySection) => {
+		const categoryHeader = categorySection.querySelector("header");
+		const categoryContent = categorySection.querySelector("ul");
+		const categoryArrow = categorySection.querySelector("#arrow");
+		categoryHeader.addEventListener("click", () => {
+			if (categoryContent.classList.contains("hidden")) {
+				categoryContent.classList.replace("hidden", "open");
+				categoryArrow.src = "src/picto/arrow_top_blue.png";
+			} else {
+				categoryContent.classList.replace("open", "hidden");
+				categoryArrow.src = "src/picto/arrow_down_blue.png";
+			}
+		});
+	});
+}
+
+// Sliders
+
+if (screen === "mobile") {
 let sliderNumberActivity = 1;
 nextActivity.addEventListener("click", () => {
 		// j'incrémente activity et sliderNumber (ici devient 1), cache l'image en cours
@@ -50,8 +77,6 @@ let sliderNumberDrink = 1;
 		}
 		document.querySelector("#drink" + sliderNumberDrink).classList.remove("hidden-image");
 	});
-
-	console.log(sliderNumberDrink)
 		
 let sliderNumberEat = 1;
 	nextEat.addEventListener("click", () => {
@@ -75,7 +100,4 @@ let sliderNumberEat = 1;
 		}
 		document.querySelector("#eat" + sliderNumberEat).classList.remove("hidden-image");
 	});
-
-	console.log(sliderNumberEat)
-	
-
+}

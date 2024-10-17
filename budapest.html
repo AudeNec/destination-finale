@@ -1,1 +1,186 @@
-Ici c'est Budapest
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 720px)">
+
+    <title>Destination Finale - Trouvez Votre Destination de Voyage Idéale</title>
+</head>
+<body>
+    <nav>
+        <a href="accueil.html"><img id="logo" src="src/logo.png" alt="logo"></a>
+        <ul id="menu">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li id="nav-destination">Destinations
+                <ul class="list-destination">
+                    <li><a href="edimbourg.html" class="destination-nav">Edimbourg</a></li>
+                    <li><a href="bruxelles.html" class="destination-nav">Bruxelles</a></li>
+                    <li><a href="budapest.html" class="destination-nav">Budapest</a></li>
+                    <li><a href="valence.html" class="destination-nav">Valence</a></li>
+                </ul>
+            </li>
+            <li><a href="a-propos.html">À propos</a></li>
+        </ul>
+        <img id="burger" class="btn-nav" src="src/picto/menu.png" alt="Menu-burger icônes créées par Corner Pixel - Flaticon">
+        <img id="cross" class="btn-nav" src="src/picto/cross.png" alt="Quitter le menu de navigation">
+    </nav>
+    <header id="main-header">Voyagez avant que la vie ne vous rattrape !</header>
+    <main>
+        <div id="intro-destination">
+            <img
+            class="photodestination"
+            src="./src/photovalence/photovalence1.jpg"
+            alt="photodestinationreve"
+            />
+            <section class="intro-city">
+                <img 
+                class= "logocity"
+                src="src/logo-villes/fan_blue.png"
+                alt="fan_blue"
+                />
+                <div class="fichecity">
+                <h1>
+                    VALENCE
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .
+                </p>
+            </div>
+            </section>
+        </div>
+        <section id="buttons-category">
+            <a href="#top-3"><img src="./src/picto/top3_yellow.png"></a>
+            <a href="#sortir"><img src="./src/picto/drink_yellow.png"></a>
+            <a href="#manger"><img src="./src/picto/eat_yellow.png"></a>
+            <a href="#venir"><img src="./src/picto/train_yellow.png"></a>
+        </section>
+        <section id="top-3" class="category">
+            <header>   
+                <img id="arrow" src="src\picto\arrow_down_blue.png" alt="flèche bas">      
+                <img src="src\picto\top3_blue.png" alt="pictogramme top 3">
+                <h2>Top 3 des activités</h2>
+            </header>
+                <ul class="slider hidden">
+                    <li class="slide1" id="activity1">
+                         <a href="https://www.google.fr/maps/place/Cimeti%C3%A8re+du+P%C3%A8re-Lachaise/@48.8636416,2.4018944,14z/data=!4m6!3m5!1s0x47e66d8b5c69a785:0xa1cf6127530b6419!8m2!3d48.861472!4d2.3934725!16zL20vMDJmcmZr?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                        <img id="ville1-activite1" src="src\photo-brussels\photo-grand-place.jpg" alt="Super activité 1">
+                        <p>Super activité 1 📍</p>
+                        </a>
+                    </li>
+                    <li class="slide1 hidden-image" id="activity2">
+                         <a href="" target="_blank">
+                        <img id="ville1-activite2" src="src\photo-brussels\photo-houses.jpg" alt="Super activité 2">
+                        <p>Super activité 2 📍</p>
+                        </a>
+                    </li>
+                    <li class="slide1 hidden-image" id="activity3">
+                        <a href="" target="_blank">
+                        <img id="ville1-activite3" src="src\photo-brussels\photo-sablons.jpg" alt="Super activité 3">
+                        <p>Super activité 3 📍</p>
+                        </a>
+                    </li>
+                    <div class="previous" id="previous-activity"><</div>
+                    <div class="next" id="next-activity">></div>
+                </ul>
+        </section>
+        <section id="sortir" class="category">
+            <header>
+                <img id="arrow" src="src\picto\arrow_down_blue.png" alt="flèche bas">
+                <img  src="src\picto\drink_blue.png" alt="pictogramme bière en bleu">
+                <h2>Où sortir ?</h2>
+            </header>
+            <ul class="slider hidden">
+                <li class="slide1" id="drink1">
+                    <a href="" target="_blank">
+                    <img id="ville1-sortie1" src="src\photovalence\photovalence1.jpg" alt="Super bière">
+                    <p>Super bière 📍</p>
+                    </a>
+                </li>
+                <li class="slide1 hidden-image" id="drink2">
+                    <a href="" target="_blank">
+                    <img id="ville1-sortie2" src="src\photovalence\photovalence2.jpg" alt="Cocktails top">
+                    <p>Cocktails top 📍</p>
+                    </a>
+                </li>
+                <li class="slide1 hidden-image" id="drink3">
+                    <a href="" target="_blank">
+                    <img id="ville1-sortie3" src="src\photovalence\photovalence3.jpg" alt="Dancefloor on fire">
+                    <p>Dancefloor on fire 📍</p>
+                    </a>
+                </li>
+                <div class="previous" id="previous-drink"><</div>
+                <div class="next" id="next-drink">></div>
+            </ul>
+        </section>
+        <section id="manger" class="category">
+            <header>
+                <img id="arrow" src="src\picto\arrow_down_blue.png" alt="flèche bas">
+                <img src="src\picto\eat_blue.png" alt="pictogramme assiette bleu">
+                <h2>Où manger ?</h2>
+            </header>   
+            <ul class="slider hidden">
+                <li class="slide1" id="eat1">
+                    <a href="" target="_blank">
+                    <img id="ville1-manger1" src="src\photo-brussels\manger-guiguette.jpg" alt="Tapas à tomber">
+                    <p>Tapas à tomber 📍</p>
+                    </a>
+                </li>
+                <li class="slide1 hidden-image" id="eat2">
+                    <a href="" target="_blank">
+                    <img id="ville1-manger2" src="src\photo-brussels\manger-maison-antoine.jpg" alt="Les meilleurs frites de votre vie">
+                    <p>Les meilleurs frites de votre vie 📍</p>
+                    </a>
+                </li>
+                <li class="slide1 hidden-image" id="eat3">
+                    <a href="" target="_blank">
+                    <img id="ville1-manger3" src="src\photo-brussels\manger-wolf.png" alt="Petit boui boui au top">
+                    <p>Petit boui boui au top 📍</p>
+                    </a>
+                </li>
+                <div class="previous" id="previous-eat"><</div>
+                <div class="next" id="next-eat">></div>
+            </ul>
+        </section>
+        <section id="venir" class="category">
+            <header>
+                <img id="arrow" src="src\picto\arrow_down_blue.png" alt="flèche bas">
+                <img src="src\picto\train_blue.png" alt="pictogramme train bleu">
+                <h2>Comment y aller</h2>
+            </header>
+            <ul class="hidden">
+                <li> <a href="https://www.sncf-connect.com/" target="_blank">
+                    🚄 Trouver un billet de train
+                    </a>
+                </li>
+                <li> <a href="" target="_blank">
+                    🚗 Location de voiture
+                    </a>
+                    <li> <a href="" target="_blank">
+                    ✈️ Trouver un billet d'avion
+                        </a>
+                    </li>
+                </li>
+            </ul>
+        </section>
+        <section id="up">
+            <button id="btn-up" onclick="window.location.href='#logo';">
+                <img src="./src/picto/arrow_top_blue.png" alt="Remonter en haut de la page" width="15px">
+            </button>
+        </section>
+    </main>
+      <footer>
+        <ul>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="mentions.html">Mentions Légales</a></li>
+        </ul>
+        <span>© Tous droits réservés - Destination Finale</span>
+    </footer>
+
+    <script src="script-destination.js"></script>
+    <script src="script-nav.js"></script>
+</body>
+</html>
