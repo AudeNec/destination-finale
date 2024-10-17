@@ -7,6 +7,8 @@ const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
 const buttons = document.querySelectorAll("button");
+const array1 = document.querySelectorAll(".slide1");
+const previous = document.querySelector(".previous");
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
@@ -90,7 +92,6 @@ cross.addEventListener("click", () => {
 
 // Remplissage des coeurs
 
-// biome-ignore lint/complexity/noForEach: <explanation>
 button.forEach((element, index) => {
 	element.clicked = false;
 	const img = element.querySelector("img");
@@ -144,23 +145,3 @@ document.addEventListener("click", function (event) {
 		cardcity.style.display = "none";
 	}
 });
-
-// Ouverture des catégories
-
-if (screen === "desktop") {
-	// biome-ignore lint/complexity/noForEach: <explanation>
-	categorySections.forEach((categorySection) => {
-		const categoryHeader = categorySection.querySelector("header");
-		const categoryContent = categorySection.querySelector("ul");
-		const categoryArrow = categorySection.querySelector("#arrow");
-		categoryHeader.addEventListener("click", () => {
-			if (categoryContent.style.display !== "flex") {
-				categoryContent.style.display = "flex";
-				categoryArrow.src = "src/picto/arrow_top_blue.png";
-			} else {
-				categoryContent.style.display = "none";
-				categoryArrow.src = "src/picto/arrow_down_blue.png";
-			}
-		});
-	});
-}
