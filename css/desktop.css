@@ -141,13 +141,21 @@ main div.fichecity {
 	height: 10rem;
 }
 
+main div.fichecity h1 {
+	font-size: 2rem;
+}
+
+main section.intro-city div.fichecity p {
+	font-size: 1.2rem;
+}
+
 main section.city div.fichecity button {
 	margin: 0;
 }
 
 main section#welcome {
 	width: 50%;
-	height: 100vh;
+	height: 600px;
 }
 
 /* Page Fiche destination */
