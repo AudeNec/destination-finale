@@ -6,6 +6,7 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
+const buttons = document.querySelectorAll("button");
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
@@ -30,6 +31,7 @@ const discoverLink = [
 	"budapest.html",
 	"valence.html",
 ];
+const welcome = document.querySelector("#welcome");
 const footer = document.querySelector("footer");
 const categorySections = document.querySelectorAll("main section.category");
 const screen = getComputedStyle(document.body)
@@ -67,7 +69,6 @@ button.forEach((element, index) => {
 		img.src = "./src/picto/heart_full_yellow.png";
 	});
 	element.addEventListener("click", () => {
-		const welcome = document.querySelector("#welcome");
 		welcome.style.display = "none";
 		cardcity.style.display = "flex";
 		title.innerText = arrTitle[index];
@@ -79,6 +80,27 @@ button.forEach((element, index) => {
 	});
 });
 
+document.addEventListener("click", (event) => {
+	let clickedbutton = false;
+
+	// biome-ignore lint/complexity/noForEach: <explanation>
+	buttons.forEach((btn) => {
+		if (btn.contains(event.target)) {
+			clickedbutton = true;
+		}
+	});
+
+	if (!clickedbutton) {
+		welcome.style.display = "flex";
+		cardcity.style.display = "none";
+		// biome-ignore lint/complexity/noForEach: <explanation>
+		button.forEach((btn) => {
+			const btnImg = btn.querySelector("img");
+			btnImg.src = "./src/picto/heart_empty_yellow.png";
+			btn.clicked = false;
+		});
+	}
+});
 // Ouverture des catégories
 
 if (screen === "desktop") {
