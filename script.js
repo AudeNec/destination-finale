@@ -83,7 +83,6 @@ cross.addEventListener("click", () => {
 
 // Remplissage des coeurs
 
-// biome-ignore lint/complexity/noForEach: <explanation>
 button.forEach((element, index) => {
 	element.clicked = false;
 	const img = element.querySelector("img");
@@ -133,11 +132,11 @@ if (screen === "desktop") {
 		const categoryContent = categorySection.querySelector("ul");
 		const categoryArrow = categorySection.querySelector("#arrow");
 		categoryHeader.addEventListener("click", () => {
-			if (categoryContent.style.display !== "flex") {
-				categoryContent.style.display = "flex";
+			if (categoryContent.classList.contains("hidden")) {
+				categoryContent.classList = "open";
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
-				categoryContent.style.display = "none";
+				categoryContent.classList = "hidden";
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
