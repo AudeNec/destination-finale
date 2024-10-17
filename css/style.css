@@ -279,7 +279,7 @@ main section.category ul .next {
 }
 
 main section.category ul main section.category ul.slider:hover main section.category ul .previous,
-.slider:hover .next, {
+.slider:hover .next {
 	opacity: 1;
 }
 
