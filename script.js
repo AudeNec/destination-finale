@@ -6,9 +6,6 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
-const array1 = document.querySelectorAll(".slide1");
-const previous = document.querySelector(".previous");
-const next = document.querySelector(".next");
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
