@@ -75,6 +75,7 @@ main section#map #button-valence {
 
 main#main-accueil {
 	display: flex;
+	flex-direction: row;
 }
 
 main section.city {

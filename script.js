@@ -20,10 +20,10 @@ const title = document.querySelector(".fichecity h1");
 const parag = document.querySelector(".fichecity p");
 const discover = document.querySelector(".fichecity button");
 const discoverLink = [
-	"./destination-finale/edimbourg.html",
-	"./destination-finale/bruxelles.html",
-	"./destination-finale/budapest.html",
-	"./destination-finale/valence.html",
+	"edimbourg.html",
+	"bruxelles.html",
+	"budapest.html",
+	"valence.html",
 ];
 const footer = document.querySelector("footer");
 
