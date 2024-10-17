@@ -134,7 +134,7 @@ main section#welcome p {
 /* Style carte ville */
 
 main section.city {
-	display: flex;
+	display: none;
 	background-color: var(--secondary-color);
 	justify-content: space-around;
 	gap: 3rem;
