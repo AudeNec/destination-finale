@@ -205,6 +205,7 @@ main section.intro-city div.fichecity p {
 main section.intro-city img.logocity {
 	height: 8rem;
 }
+
 /* Page Fiche destination - Style des boutons d'ancrage */
 
 main section#buttons-category {
@@ -259,6 +260,73 @@ main section.category ul {
 
 main section.category li img {
 	width: 80vw;
+}
+main section.category ul .slider {
+	position: relative;
+	width: 300px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+main section.category ul img {
+	opacity: 0;
+	animation: fade-in 0.6s ease-in forwards;
+	height: 20em;
+	width: 50em;
+}
+
+main section.category ul .hidden-image {
+	display: none;
+}
+
+main section.category ul .previous,
+main section.category ul .next {
+	cursor: pointer;
+	animation: opacity 0.3s ease;
+	/* opacity: 0; */
+	position: absolute;
+	font-size: 80px;
+	color: var(--dark-color);
+	/* background-color: var(--third-color);
+	border-radius: 50%; 
+	padding: 0 5px 0 5px; */
+	/* max-height: 20px; */
+}
+
+main section.category ul .previous {
+	left: 0;
+	margin-top: 10%;
+	margin-left: 3%;
+}
+main section.category ul .next {
+	right: 0;
+	margin-top: 10%;
+	margin-right: 3%;
+}
+
+main
+	section.category
+	ul
+	main
+	section.category
+	ul.slider:hover
+	main
+	section.category
+	ul
+	.previous,
+.slider:hover .next {
+	opacity: 1;
 }
 
 main section.category li a {
