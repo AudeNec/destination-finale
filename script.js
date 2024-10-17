@@ -6,9 +6,6 @@ const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
-const array1 = document.querySelectorAll(".slide1");
-const previous = document.querySelector(".previous")
-const next = document.querySelector(".next")
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
@@ -126,33 +123,6 @@ button.forEach((element, index) => {
 	});
 });
 
-	// slider
-
-	let sliderNumber = 1;
-	next.addEventListener("click", () => {
-		// j'incrémente activity et sliderNumber (ici devient 1), cache l'image en cours
-		document.querySelector("#activity" + sliderNumber).classList.add("hidden-image");
-		// je passe à l'image suivante
-		sliderNumber++;	
-		// si on dépasse le 3e on revient à 1
-		if (sliderNumber > 3) {
-			sliderNumber = 1;
-		}
-		// afficher la prochaine image
-		document.querySelector("#activity" + sliderNumber).classList.remove("hidden-image");
-	});
-	
-	previous.addEventListener("click", () => {
-		document.querySelector("#activity" + sliderNumber).classList.add("hidden-image");
-		sliderNumber--;
-		if (sliderNumber <1) {
-			sliderNumber = 3;
-		}
-		document.querySelector("#activity" + sliderNumber).classList.remove("hidden-image");
-	});
-		
-	
-
 // Ouverture des catégories
 
 if (screen === "desktop") {
@@ -163,10 +133,10 @@ if (screen === "desktop") {
 		const categoryArrow = categorySection.querySelector("#arrow");
 		categoryHeader.addEventListener("click", () => {
 			if (categoryContent.classList.contains("hidden")) {
-				categoryContent.classList.replace("hidden" "open");
+				categoryContent.classList.replace("hidden", "open");
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
-				categoryContent.classList.replace("open" "hidden")";
+				categoryContent.classList.replace("open", "hidden");
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
