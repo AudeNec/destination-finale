@@ -14,7 +14,12 @@ const arrLogo = [
 	"./src/logo-villes/fan_blue.png",
 ];
 const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
-const arrParag = ["Blabla1", "Blabla2", "Blabla3", "Blabla4"];
+const arrParag = [
+	"Blabla1",
+	"Découvrez la capitale de la Belgique qui allie richesse historique, carrefour culturel et ambiance cosmopolite, au cœur de l'Europe.",
+	"Blabla3",
+	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des arts et des sciences, à l'architecture futuriste.",
+];
 const logo = document.querySelector(".logocity");
 const title = document.querySelector(".fichecity h1");
 const parag = document.querySelector(".fichecity p");
@@ -30,56 +35,7 @@ const categorySections = document.querySelectorAll("main section.category");
 const screen = getComputedStyle(document.body)
 	.getPropertyValue("--screen")
 	.replace(/\W/g, "");
-
-// Création de la navigation mobile
-
-() => {
-	const mainNav = document.createElement("main");
-	const ulNav = document.createElement("ul");
-	ulNav.classList.add("list-nav");
-	const accueil = document.createElement("li");
-	accueil.innerText = "Accueil";
-	accueil.classList.add("cat-nav");
-	const destinations = document.createElement("li");
-	destinations.innerText = "Destinations";
-	destinations.classList.add("cat-nav");
-	const arrow = document.createElement("img");
-	arrow.src = "./src/picto/arrow_right_blue.png";
-	arrow.id = "arrow";
-	destinations.appendChild(arrow);
-	const aPropos = document.createElement("li");
-	aPropos.innerText = "À propos";
-	aPropos.classList.add("cat-nav");
-	ulNav.appendChild(accueil);
-	ulNav.appendChild(destinations);
-	ulNav.appendChild(aPropos);
-	mainNav.appendChild(ulNav);
-	return mainNav;
-};
-
-burger.addEventListener("click", () => {
-	main.style.display = "none";
-	burger.style.display = "none";
-	cross.style.display = "inline-block";
-	header.style.display = "none";
-	const mainNav = buildNavigation();
-	body.insertBefore(mainNav, body.childNodes[2]);
-	body.style.display = "flex";
-	body.style.flexDirection = "column";
-	body.style.justifyContent = "space-between";
-	footer.style.position = "fixed";
-	footer.style.bottom = "0px";
-});
-
-cross.addEventListener("click", () => {
-	main.style.display = "block";
-	const mainNav = document.querySelector("main");
-	mainNav.style.display = "none";
-	burger.style.display = "inline-block";
-	cross.style.display = "none";
-	footer.style.position = "static";
-	footer.style.removeProperty("bottom");
-});
+const navDestination = document.querySelector("nav-destination");
 
 // Remplissage des coeurs
 
@@ -137,10 +93,8 @@ if (screen === "desktop") {
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
 				categoryContent.classList.replace("open", "hidden");
-
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
 	});
 }
-
