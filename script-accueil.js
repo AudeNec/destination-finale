@@ -1,14 +1,7 @@
-const main = document.querySelector("main");
-const body = document.querySelector("body");
-const header = document.querySelector("header");
-const burger = document.querySelector("#burger");
-const cross = document.querySelector("#cross");
 const button = document.querySelectorAll(
 	"#button-edimbourg, #button-bruxelles, #button-budapest, #button-valence",
 );
-const array1 = document.querySelectorAll(".slide1");
-const previous = document.querySelector(".previous");
-const next = document.querySelector(".next");
+const buttons = document.querySelectorAll("button");
 const cardcity = document.querySelector(".city");
 const arrLogo = [
 	"./src/logo-villes/kilt_blue.png",
@@ -33,12 +26,8 @@ const discoverLink = [
 	"budapest.html",
 	"valence.html",
 ];
-const footer = document.querySelector("footer");
-const categorySections = document.querySelectorAll("main section.category");
-const screen = getComputedStyle(document.body)
-	.getPropertyValue("--screen")
-	.replace(/\W/g, "");
-const navDestination = document.querySelector("nav-destination");
+const welcome = document.querySelector("#welcome");
+
 
 // Remplissage des coeurs
 
@@ -70,7 +59,6 @@ button.forEach((element, index) => {
 		img.src = "./src/picto/heart_full_yellow.png";
 	});
 	element.addEventListener("click", () => {
-		const welcome = document.querySelector("#welcome");
 		welcome.style.display = "none";
 		cardcity.style.display = "flex";
 		title.innerText = arrTitle[index];
@@ -82,22 +70,25 @@ button.forEach((element, index) => {
 	});
 });
 
-// Ouverture des catégories
+document.addEventListener("click", (event) => {
+	let clickedbutton = false;
 
-if (screen === "desktop") {
 	// biome-ignore lint/complexity/noForEach: <explanation>
-	categorySections.forEach((categorySection) => {
-		const categoryHeader = categorySection.querySelector("header");
-		const categoryContent = categorySection.querySelector("ul");
-		const categoryArrow = categorySection.querySelector("#arrow");
-		categoryHeader.addEventListener("click", () => {
-			if (categoryContent.classList.contains("hidden")) {
-				categoryContent.classList.replace("hidden", "open");
-				categoryArrow.src = "src/picto/arrow_top_blue.png";
-			} else {
-				categoryContent.classList.replace("open", "hidden");
-				categoryArrow.src = "src/picto/arrow_down_blue.png";
-			}
-		});
+	buttons.forEach((btn) => {
+		if (btn.contains(event.target)) {
+			clickedbutton = true;
+		}
 	});
-}
+
+	if (!clickedbutton) {
+		welcome.style.display = "flex";
+		cardcity.style.display = "none";
+		// biome-ignore lint/complexity/noForEach: <explanation>
+		button.forEach((btn) => {
+			const btnImg = btn.querySelector("img");
+			btnImg.src = "./src/picto/heart_empty_yellow.png";
+			btn.clicked = false;
+		});
+	}
+});
+
