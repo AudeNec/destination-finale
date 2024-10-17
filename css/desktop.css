@@ -137,10 +137,6 @@ main section.city {
 	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
 }
 
-main div.fichecity {
-	height: 10rem;
-}
-
 main div.fichecity h1 {
 	font-size: 2rem;
 }
