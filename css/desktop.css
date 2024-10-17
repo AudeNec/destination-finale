@@ -1,3 +1,18 @@
+@media (min-width: 720px) {
+	body {
+		--screen: "desktop";
+	}
+}
+
+@keyframes open-category {
+	from {
+		height: 0;
+	}
+	to {
+		height: auto;
+	}
+}
+
 /* Style de la nav */
 
 nav,
@@ -30,6 +45,11 @@ nav ul#menu {
 
 nav ul li {
 	min-width: fit-content;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--white-color);
 }
 
 nav img#burger {
@@ -75,6 +95,7 @@ main section#map #button-valence {
 
 main#main-accueil {
 	display: flex;
+	flex-direction: row;
 }
 
 main section.city {
@@ -85,7 +106,21 @@ main section#welcome {
 	width: 50%;
 }
 
-/* Page Fiche destination - Style des boutons d'ancrage */
+/* Page Fiche destination */
+
+main div#intro-destination {
+	display: flex;
+}
+
+main .photodestination {
+	width: 50vw;
+	height: max-content;
+	object-fit: cover;
+}
+
+main section.intro-city {
+	align-items: center;
+}
 
 main section#buttons-category {
 	display: none;
@@ -99,6 +134,7 @@ main section#top-3,
 body section#manger {
 	background-color: var(--white-color);
 }
+
 main section.category header {
 	padding: 1rem 2rem;
 	justify-content: center;
@@ -109,21 +145,32 @@ main section.category #arrow {
 	width: 2%;
 }
 main section.category img {
-    width: 5%;
+	width: 5%;
 }
-main section.category ul{
-    background-color: var(--secondary-color);
-    font-size: 1.2rem;
-    padding : 2rem;
-    justify-content : space-between;
-}
-main section.category li img{
-    width: 100%;
+main section.category ul {
+	background-color: var(--secondary-color);
+	font-size: 1.2rem;
+	padding: 2rem;
+	justify-content: space-between;
+	display: none;
+	overflow: hidden;
 }
 
-main section#venir ul{
-    width : 100%;
-    display : flex;
+main section.category ul.open {
+	animation: open-category 2s linear 0s 1 normal;
+}
+
+main section.category li img {
+	width: 100%;
+}
+
+main section#venir ul {
+	width: 100%;
+	display: none;
+}
+
+main section#up {
+	display: none;
 }
 
 /* Style du footer */
@@ -150,4 +197,3 @@ footer ul {
 footer ul li {
 	min-width: fit-content;
 }
-

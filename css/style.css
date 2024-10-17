@@ -134,7 +134,7 @@ main section#welcome p {
 /* Style carte ville */
 
 main section.city {
-	display: flex;
+	display: none;
 	background-color: var(--secondary-color);
 	justify-content: space-around;
 	gap: 3rem;
@@ -152,28 +152,39 @@ main section.city img.logocity {
 }
 
 main section.city div.fichecity button {
-	width: 166.03px;
-	height: 47.1px;
-	background-color: var(--third-color);
-	font-family: var(--title-font);
-	font-weight: bold;
-	border-radius: 25px;
+	background-image: linear-gradient(
+		to right,
+		#eac435,
+		#f4b041,
+		#f07e4d,
+		#b44e8a,
+		#219ebc
+	);
+	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	-webkit-box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	-moz-box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	width: 175px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	cursor: pointer;
+	margin: 20px;
+	height: 55px;
+	text-align: center;
 	border: none;
-	box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
-	-webkit-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
-	-moz-box-shadow: 8px 8px 13px -1px rgba(28, 25, 25, 0.61);
+	background-size: 300% 100%;
+	border-radius: 50px;
+	transition: all .4s ease-in-out;
 }
 
 main section.city div.fichecity button:hover {
-	border: 3px solid var(--third-color);
-	background-color: #fff;
-	cursor: pointer;
-	transition: background-color 0.4s ease, color 0.4s ease;
+	background-position: 100% 0;
+	transition: all .4s ease-in-out;
 }
 
 /* Page Fiche destination - Dimensionnement photo ville*/
 
-main section#photo .photodestination {
+main .photodestination {
 	width: 100%;
 }
 
@@ -233,17 +244,22 @@ main section.category img {
 main section.category #arrow {
 	display: none;
 }
+
 main section.category h2 {
 	font-size: 1.5rem;
 	color: var(--main-color);
 }
 
-main section.category ul{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    padding-top: 1rem;
-    gap: 1rem
+main section.category ul {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	padding-top: 1rem;
+	gap: 1rem;
+}
+
+main section.category li img {
+	width: 80vw;
 }
 main section.category ul .slider {
 position: relative;
@@ -303,21 +319,50 @@ main section.category ul main section.category ul.slider:hover main section.cate
 	opacity: 1;
 }
 
-main section.category li img{
-    width: 80vw;
+main section.category li a {
+	text-decoration: none;
+}
+main section.category li p {
+	text-align: center;
 }
 
-main section.category li a{
-    text-decoration: none;
-    
-}
-main section.category li p{
-    text-align: center;
+main section#venir ul {
+	display: inline-block;
+	padding-left: 2.5rem;
 }
 
-main section#venir ul{
-    display: inline-block;
-    padding-left: 2.5rem;
+/* Style bouton remonter en haut */
+
+main section#up {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 2em 0;
+}
+
+main section button#btn-up {
+	background-color: transparent;
+	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
+	width: 175px;
+	cursor: pointer;
+	border: solid 3px var(--main-color);
+	border-radius: 50px;
+	height: 55px;
+}
+
+main section.category li img {
+	width: 80vw;
+}
+
+main section.category li a {
+	text-decoration: none;
+}
+main section.category li p {
+	text-align: center;
+}
+
+main section#venir ul {
+	display: inline-block;
+	padding-left: 2.5rem;
 }
 
 /* Style footer */
@@ -326,9 +371,7 @@ footer {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	position: fixed;
 	width: 100%;
-	bottom: 0;
 }
 
 footer ul {
@@ -337,6 +380,11 @@ footer ul {
 	justify-content: space-evenly;
 	width: 100%;
 	padding: 1em;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: var(--white-color);
 }
 
 footer span {
