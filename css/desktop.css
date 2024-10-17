@@ -192,8 +192,18 @@ main section.category #arrow {
 main section.category img {
 	width: 5%;
 }
+
+main section.category ul .previous,
+main section.category ul .next {
+	display: none;
+}
+
 main section.category ul.hidden {
 	display: none;
+}
+
+main section.category ul .hidden-image {
+	display: inline-block;
 }
 
 main section.category ul.open {
