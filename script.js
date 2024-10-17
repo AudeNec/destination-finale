@@ -33,56 +33,7 @@ const categorySections = document.querySelectorAll("main section.category");
 const screen = getComputedStyle(document.body)
 	.getPropertyValue("--screen")
 	.replace(/\W/g, "");
-
-// Création de la navigation mobile
-
-() => {
-	const mainNav = document.createElement("main");
-	const ulNav = document.createElement("ul");
-	ulNav.classList.add("list-nav");
-	const accueil = document.createElement("li");
-	accueil.innerText = "Accueil";
-	accueil.classList.add("cat-nav");
-	const destinations = document.createElement("li");
-	destinations.innerText = "Destinations";
-	destinations.classList.add("cat-nav");
-	const arrow = document.createElement("img");
-	arrow.src = "./src/picto/arrow_right_blue.png";
-	arrow.id = "arrow";
-	destinations.appendChild(arrow);
-	const aPropos = document.createElement("li");
-	aPropos.innerText = "À propos";
-	aPropos.classList.add("cat-nav");
-	ulNav.appendChild(accueil);
-	ulNav.appendChild(destinations);
-	ulNav.appendChild(aPropos);
-	mainNav.appendChild(ulNav);
-	return mainNav;
-};
-
-burger.addEventListener("click", () => {
-	main.style.display = "none";
-	burger.style.display = "none";
-	cross.style.display = "inline-block";
-	header.style.display = "none";
-	const mainNav = buildNavigation();
-	body.insertBefore(mainNav, body.childNodes[2]);
-	body.style.display = "flex";
-	body.style.flexDirection = "column";
-	body.style.justifyContent = "space-between";
-	footer.style.position = "fixed";
-	footer.style.bottom = "0px";
-});
-
-cross.addEventListener("click", () => {
-	main.style.display = "block";
-	const mainNav = document.querySelector("main");
-	mainNav.style.display = "none";
-	burger.style.display = "inline-block";
-	cross.style.display = "none";
-	footer.style.position = "static";
-	footer.style.removeProperty("bottom");
-});
+const navDestination = document.querySelector("nav-destination");
 
 // Remplissage des coeurs
 
@@ -126,39 +77,6 @@ button.forEach((element, index) => {
 	});
 });
 
-// slider
-
-let sliderNumber = 1;
-next.addEventListener("click", () => {
-	// j'incrémente activity et sliderNumber (ici devient 1), cache l'image en cours
-	document
-		.querySelector("#activity" + sliderNumber)
-		.classList.add("hidden-image");
-	// je passe à l'image suivante
-	sliderNumber++;
-	// si on dépasse le 3e on revient à 1
-	if (sliderNumber > 3) {
-		sliderNumber = 1;
-	}
-	// afficher la prochaine image
-	document
-		.querySelector("#activity" + sliderNumber)
-		.classList.remove("hidden-image");
-});
-
-previous.addEventListener("click", () => {
-	document
-		.querySelector("#activity" + sliderNumber)
-		.classList.add("hidden-image");
-	sliderNumber--;
-	if (sliderNumber < 1) {
-		sliderNumber = 3;
-	}
-	document
-		.querySelector("#activity" + sliderNumber)
-		.classList.remove("hidden-image");
-});
-
 // Ouverture des catégories
 
 if (screen === "desktop") {
@@ -169,10 +87,10 @@ if (screen === "desktop") {
 		const categoryArrow = categorySection.querySelector("#arrow");
 		categoryHeader.addEventListener("click", () => {
 			if (categoryContent.classList.contains("hidden")) {
-				categoryContent.classList.replace("hidden" "open");
+				categoryContent.classList.replace("hidden", "open");
 				categoryArrow.src = "src/picto/arrow_top_blue.png";
 			} else {
-				categoryContent.classList.replace("open" "hidden")";
+				categoryContent.classList.replace("open", "hidden");
 				categoryArrow.src = "src/picto/arrow_down_blue.png";
 			}
 		});
