@@ -64,7 +64,7 @@ button.forEach((element, index) => {
 		parag.innerText = arrParag[index];
 		logo.src = arrLogo[index];
 		document
-			.querySelector(".fichecity button")
+			.querySelector(".fichecity a")
 			.setAttribute("href", discoverLink[index]);
 	});
 });
