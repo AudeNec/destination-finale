@@ -450,3 +450,6 @@ main#main-noflight a {
 	font-size: 2em;
 	text-decoration: none;
 }
+main#main-noflight article {
+	padding: 1em 0;
+}
