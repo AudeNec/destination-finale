@@ -11,7 +11,7 @@ const arrLogo = [
 ];
 const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
 const arrParag = [
-	"Blabla1",
+	"",
 	"Découvrez la capitale de la Belgique qui allie richesse historique, carrefour culturel et ambiance cosmopolite, au cœur de l'Europe.",
 	"Capitale de la Hongrie, Budapest est traversée par le Danube qui sépare la ville en Buda (rive droite) et Pest (rive gauche). Elle offre une combinaison unique de cultures diverses, une cuisine raffinée et un large éventail d’activités de loisirs.",
 	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des arts et des sciences, à l'architecture futuriste.",
