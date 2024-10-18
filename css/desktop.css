@@ -131,14 +131,10 @@ main#main-accueil {
 
 main section.city {
 	display: none;
-	height: 15rem;
+	height: auto;
 	width: 30rem;
 	border-radius: 50px;
 	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
-}
-
-main div.fichecity {
-	height: 10rem;
 }
 
 main div.fichecity h1 {

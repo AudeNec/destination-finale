@@ -14,7 +14,7 @@ const arrParag = [
 	"Blabla1",
 	"Découvrez la capitale de la Belgique qui allie richesse historique, carrefour culturel et ambiance cosmopolite, au cœur de l'Europe.",
 	"Blabla3",
-	"Blabla4",
+	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des arts et des sciences, à l'architecture futuriste.",
 ];
 const logo = document.querySelector(".logocity");
 const title = document.querySelector(".fichecity h1");
@@ -27,7 +27,6 @@ const discoverLink = [
 	"valence.html",
 ];
 const welcome = document.querySelector("#welcome");
-
 
 // Remplissage des coeurs
 
@@ -65,7 +64,7 @@ button.forEach((element, index) => {
 		parag.innerText = arrParag[index];
 		logo.src = arrLogo[index];
 		document
-			.querySelector(".fichecity button")
+			.querySelector(".fichecity a")
 			.setAttribute("href", discoverLink[index]);
 	});
 });
@@ -91,4 +90,3 @@ document.addEventListener("click", (event) => {
 		});
 	}
 });
-
