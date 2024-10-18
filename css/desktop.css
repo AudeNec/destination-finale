@@ -131,14 +131,18 @@ main#main-accueil {
 
 main section.city {
 	display: none;
-	height: 15rem;
+	height: auto;
 	width: 30rem;
 	border-radius: 50px;
 	box-shadow: 8px 8px 5px 0px rgba(2, 48, 71, 0.75);
 }
 
-main div.fichecity {
-	height: 10rem;
+main div.fichecity h1 {
+	font-size: 2rem;
+}
+
+main section.intro-city div.fichecity p {
+	font-size: 1.2rem;
 }
 
 main section.city div.fichecity button {
@@ -147,7 +151,7 @@ main section.city div.fichecity button {
 
 main section#welcome {
 	width: 50%;
-	height: 100vh;
+	height: 600px;
 }
 
 /* Page Fiche destination */
