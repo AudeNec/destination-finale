@@ -432,3 +432,18 @@ main ul.list-nav li.cat-nav:nth-child(2) {
 main ul.list-nav li.cat-nav img#arrow {
 	width: 25px;
 }
+
+/* Page no flight */
+
+main#main-noflight {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 70vh;
+}
+
+main#main-noflight a {
+	font-size: 2em;
+	text-decoration: none;
+}
