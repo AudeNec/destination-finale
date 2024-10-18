@@ -4,8 +4,9 @@
 @media (max-width: 720px) {
 	body {
 		--screen: "mobile";
-	}
-}
+	} *
+} 
+
 :root {
 	--main-color: #219ebc;
 	--secondary-color: #d2eaf5;
@@ -267,9 +268,6 @@ main section.category ul {
 	gap: 1rem;
 }
 
-main section.category li img {
-	width: 80vw;
-}
 main section.category ul .slider {
 	position: relative;
 	width: 300px;
@@ -278,6 +276,7 @@ main section.category ul .slider {
 	align-items: center;
 	justify-content: center;
 }
+
 
 @keyframes fade-in {
 	0% {
@@ -331,6 +330,10 @@ main
 	.previous,
 .slider:hover .next {
 	opacity: 1;
+}
+
+main section.category li img {
+	width: 80vw;
 }
 
 main section.category li a {
