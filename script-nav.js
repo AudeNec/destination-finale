@@ -16,7 +16,10 @@ function buildNavigation() {
 	const ulNav = document.createElement("ul");
 	ulNav.classList.add("list-nav");
 	const accueil = document.createElement("li");
-	accueil.innerText = "Accueil";
+	const lienAccueil = document.createElement("a");
+	lienAccueil.href = "accueil.html";
+	lienAccueil.innerText = "Accueil";
+	accueil.appendChild(lienAccueil);
 	accueil.classList.add("cat-nav");
 	const destinations = document.createElement("li");
 	destinations.innerText = "Destinations";
@@ -26,7 +29,10 @@ function buildNavigation() {
 	arrow.id = "arrow";
 	destinations.appendChild(arrow);
 	const aPropos = document.createElement("li");
-	aPropos.innerText = "À propos";
+	const lienApropos = document.createElement("a");
+	lienApropos.href = "a-propos.html";
+	lienApropos.innerText = "À propos";
+	aPropos.appendChild(lienApropos);
 	aPropos.classList.add("cat-nav");
 	ulNav.appendChild(accueil);
 	ulNav.appendChild(destinations);

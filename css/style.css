@@ -320,8 +320,16 @@ main section.category ul .next {
 	margin-right: 3%;
 }
 
-
-main section.category ul main section.category ul.slider:hover main section.category ul .previous,
+main
+	section.category
+	ul
+	main
+	section.category
+	ul.slider:hover
+	main
+	section.category
+	ul
+	.previous,
 .slider:hover .next {
 	opacity: 1;
 }
@@ -406,6 +414,11 @@ footer span {
 
 main ul.list-nav li.cat-nav {
 	padding: 2em 1em;
+}
+
+main ul.list-nav li.cat-nav a {
+	text-decoration: none;
+	color: var();
 }
 
 main ul.list-nav li.cat-nav:nth-child(odd) {
