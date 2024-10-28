@@ -11,7 +11,7 @@ const arrLogo = [
 ];
 const arrTitle = ["Edimbourg", "Bruxelles", "Budapest", "Valence"];
 const arrParag = [
-	"La capitale écossaise saura vous séduire grâce à sa richesse d'activités. Que vous soyez féru d'histoire, de vieilles pierres et de fantômes, ou plutôt brancher rugby et bières au pub. Il y en a pour tous les goûts.",
+	"La capitale écossaise saura vous séduire grâce à sa richesse d'activités. Que vous soyez féru d'histoire, de vieilles pierres et de fantômes, ou plutôt branché rugby et bières au pub. Il y en a pour tous les goûts.",
 	"Découvrez la capitale de la Belgique qui allie richesse historique, carrefour culturel et ambiance cosmopolite, au cœur de l'Europe.",
 	"Capitale de la Hongrie, Budapest est traversée par le Danube qui sépare la ville en Buda (rive droite) et Pest (rive gauche). Elle offre une combinaison unique de cultures diverses, une cuisine raffinée et un large éventail d’activités de loisirs.",
 	"Dotée d'un patrimoine architectural remarquable, la ville est notamment connue pour sa Cité des Arts et des Sciences, à l'architecture futuriste.",
