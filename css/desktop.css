@@ -284,3 +284,8 @@ nav ul.list-destination li {
 	border-bottom: solid white 1px;
 	padding: 0.5em 2em;
 }
+
+main#main-a-propos {
+	width: 50%;
+	margin: 0 auto;
+}

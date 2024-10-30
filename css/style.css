@@ -4,8 +4,8 @@
 @media (max-width: 720px) {
 	body {
 		--screen: "mobile";
-	} *
-} 
+	}
+}
 
 :root {
 	--main-color: #219ebc;
@@ -277,7 +277,6 @@ main section.category ul .slider {
 	justify-content: center;
 }
 
-
 @keyframes fade-in {
 	0% {
 		opacity: 0;
@@ -452,4 +451,30 @@ main#main-noflight a {
 }
 main#main-noflight article {
 	padding: 1em 0;
+}
+
+/* Page a propos */
+
+main#main-a-propos {
+	padding: 1em;
+}
+
+main#main-a-propos h2 {
+	font-size: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+
+main#main-a-propos p {
+	font-weight: 200;
+	padding-bottom: 2em;
+}
+
+main#main-a-propos strong {
+	font-weight: 500;
+}
+
+#footer-a-propos {
+	position: absolute;
+	bottom: 0;
 }
