@@ -457,6 +457,7 @@ main#main-noflight article {
 
 main#main-a-propos {
 	padding: 1em;
+	min-width: 700px;
 }
 
 main#main-a-propos h2 {
@@ -467,7 +468,7 @@ main#main-a-propos h2 {
 
 main#main-a-propos p {
 	font-weight: 200;
-	padding-bottom: 2em;
+	padding-bottom: 1em;
 }
 
 main#main-a-propos strong {
